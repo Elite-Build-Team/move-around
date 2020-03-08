@@ -1,4 +1,6 @@
-# What is a product backlog in Agile?
+# FAQ
+
+## What is a product backlog in Agile?
 
 According to the official Scrum Guide, the product backlog is “...an ordered list of everything that is known to be needed in the product.”
 
@@ -7,6 +9,6 @@ The product backlog sits outside of the sprint loop (meaning it contains work th
 The development team
 Customer
 Stakeholders
-For an example of what a product backlog looks like, check out the product backlog example above. 
+For an example of what a product backlog looks like, check out the product backlog example above.
 
 
