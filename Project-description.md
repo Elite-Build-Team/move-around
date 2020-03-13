@@ -23,11 +23,13 @@
 Παρακάτω παρουσιάζονται τα mock-upscreens για κάθε δυνατό χρήστη της εφαρμογής Move Around.
 
 ### Mock-up για «A.M.E.A.»
+![Mock-up για «A.M.E.A.»](images/Project-description-1.png)
 
 ### Mock-up για «Πολίτες»
+![Mock-up για «Πολίτες»](images/Project-description-2.png)
 
 ### Mock-up για «Φορείς»
-
-### Mock-up για «Φορεάς»
+![Mock-up για «Φορείς»](images/Project-description-3.png)
 
 ### Mock-up για «Δήμος»
+![Mock-up για «Δήμος»](images/Project-description-4.png)
