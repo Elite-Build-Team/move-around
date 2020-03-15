@@ -24,7 +24,13 @@ $(PHASE_1_FILES): %.pdf : %.md
 	pdfunite first-page.pdf $(BUILDDIR)/temp_$@ $(BUILDDIR)/$@
 	rm $(BUILDDIR)/temp_$@
 
-.PHONY: phase1
-phase1: $(PHASE_1_FILES)
+.PHONY: phase-1
+phase-1: $(PHASE_1_FILES)
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-1-zip
+phase-1-zip: $(PHASE_1_FILES)
+	zip -r $(BUILDDIR)/phase-1.zip $(addprefix $(BUILDDIR)/, $(PHASE_1_FILES))
 	@echo
 	@echo "Build finished!"
