@@ -3,7 +3,15 @@
 ## Clone project
 `git clone https://github.com/Elite-Build-Team/software-engineering-2020.git`
 
-## Make PDFs/zip for phase-n (only for Linux)
+## Make PDFs/ZIP for phase-n (only for Linux)
+
+Prerequisites:
+1. pandoc
+2. pdfunite
+3. zip
+4. xelatex
+5. Linux Biolinum font
+
 E.g. for phase 1:
 ```bash
 cd software-engineering-2020/
