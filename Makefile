@@ -11,6 +11,10 @@ PHASE_1_FILES = \
 	Team-risk-assessment.pdf \
 	Feasibility-study.pdf
 
+EXECUTABLES = pandoc pdfunite
+K := $(foreach exec,$(EXECUTABLES),\
+        $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
+
 .PHONY: clean
 clean:
 	-rm -rf $(BUILDDIR)/*
