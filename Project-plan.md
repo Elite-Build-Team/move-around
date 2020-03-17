@@ -10,6 +10,11 @@
 ![Pert chart](images/Project-plan-pertt-chart.png)
 
 ## Ανάθεση έργου σε ανθρώπινο δυναμικό
+![Gantt chart](images/Project-plan-user-1.png)
+![Gantt chart](images/Project-plan-user-2.png)
+![Gantt chart](images/Project-plan-user-3.png)
+![Gantt chart](images/Project-plan-user-4.png)
+
 
 ## Εκτίμιση κόστους
 Γίνονται οι εξής υποθέσεις:
