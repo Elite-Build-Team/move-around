@@ -25,9 +25,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 ## Χρονοπρογραμματισμός
 
-![Gantt chart](images/Project-plan-gantt-chart.png)
+![Gantt chart](images/Project-plan-Gantt-chart.png)
 
-![Pert chart](images/Project-plan-pertt-chart.png)
+![Pert chart](images/Project-plan-Pert-chart.png)
 
 \newpage
 
