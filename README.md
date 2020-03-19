@@ -16,6 +16,6 @@ E.g. for phase 1:
 ```bash
 cd software-engineering-2020/
 mkdir build #Files will be generated inside build/
-make phase-1 #Generate PDFs
-make phase-1-zip #Generate ZIP
+make phase-1 #Generate PDFs inside build/
+make phase-1-zip #Generate ZIP inside build/
 ```
