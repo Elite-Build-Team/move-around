@@ -1,7 +1,7 @@
 # Project Description v0.1
 # Move around
 
-[logo]: https://github.com/Elite-Build-Team/software-engineering-2020/edit/master/images/LOGO1.png "Logo Title"
+
 \newpage
 
 ## Μέλη ομάδας
