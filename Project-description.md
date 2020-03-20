@@ -30,6 +30,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 ![Mock-up για «Πολίτες»](images/Project-description-2.png)
 
+
 ![Mock-up για «Φορείς»](images/Project-description-3.png)
 
 ![Mock-up για «Δήμος»](images/Project-description-4.png)
