@@ -1,5 +1,5 @@
-% # Team Plan v0.1
-% # Move around
+% Team Plan v0.1
+% Move around
 % ![](images/Logo.jpg)
 
 \newpage

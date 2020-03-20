@@ -1,5 +1,5 @@
-% # Project Plan v0.1
-% # Move around
+% Project Plan v0.1
+% Move around
 % ![](images/Logo.jpg)
 
 \newpage
@@ -71,8 +71,5 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 * Νομικά (**500 ΕΥΡΩ**)
 
 Συνολικό κόστος : **20740 ΕΥΡΩ**
-<<<<<<< HEAD
 
 //TODO Milestones, Critical path, MSPaint στο Pert
-=======
->>>>>>> 4213b8c32efdb010b4442537c0d44507a9eb032e
