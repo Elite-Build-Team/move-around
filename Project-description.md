@@ -2,6 +2,7 @@
 % # Move around
 % ![](images/Logo.jpg)
 
+
 \newpage
 
 ## Μέλη ομάδας
