@@ -1,5 +1,6 @@
-# Project Plan v0.1
-# Move around
+% # Project Plan v0.1
+% # Move around
+% ![](images/Logo.jpg)
 
 \newpage
 
@@ -24,6 +25,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 Αποφασίσαμε επίσης για το λόγω ότι είμαστε μικρή ομάδα, να χρησιμοποιήσουμε part-time scrum master. Δηλαδή κάποιος από εμάς που πιστεύουμε έχει ικανότητες πιο κοντά σε αυτές ενός scrum master, θα αναλάβει το ρόλο αυτό, παραμένοντας ωστόσο μέλος του development team.
 
 ## Χρονοπρογραμματισμός
+Υποθέτουμε ότι το κάθε Task στο σχήμα αντιστοιχεί σε ένα Τεχνικό Υποέργο (ΤΥ) και το κάθε Sprint σε ένα Milestone. 
 
 ![Gantt chart](images/Project-plan-Gantt-chart.png)
 
@@ -69,3 +71,5 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 * Νομικά (**500 ΕΥΡΩ**)
 
 Συνολικό κόστος : **20740 ΕΥΡΩ**
+
+//TODO Milestones, Critical path, MSPaint στο Pert
