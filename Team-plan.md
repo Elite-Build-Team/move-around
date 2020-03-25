@@ -13,12 +13,16 @@
 ## Editor
 * Ρούστας Κωνσταντίνος 1054422
 
-## Contributor
+## Peer Reviewer
 
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 \newpage
+
+---
+lang: el-GR
+---
 
 ## Χρονοπρογραμματισμός
 Παρακάτω παρατίθεται ένας αρχικός χρονοπρογραμματισμός για την εργασία μας ως ομάδα.
