@@ -20,7 +20,7 @@ clean:
 	-rm -rf $(BUILDDIR)/*
 
 $(PHASE_1_FILES): %.pdf : %.md
-	pandoc $< -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 .PHONY: phase-1
 phase-1: $(PHASE_1_FILES)

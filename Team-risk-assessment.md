@@ -19,7 +19,3 @@
 Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 \newpage
-
----
-lang: el-GR
----
