@@ -14,6 +14,7 @@
 * Ρούστας Κωνσταντίνος 1054422
 
 ## Peer Reviewer
+* Συμεωνίδης Θεόδωρος 1064870
 
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot
@@ -59,5 +60,3 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 * Για την ανάπτυξη του κώδικα του έργου θα χρησιμοποιηθεί η ***Python*** με *αντικειμενοστραφή* προσανατολισμό.
 * Τα **IDEs** που θα χρησιμοποιηθούν είναι ***Pycharm*** και ***Visual Studio Code***.
 * Τα *τεχνικά κείμενα* των παραδοτέων φτιάχνονται σε ***Word*** και η μορφοποίηση τους στο ***Github*** είναι με ***Markdown Language***.
-
-todo:
