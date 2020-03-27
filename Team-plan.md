@@ -34,7 +34,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 ![Gantt chart](images/Team-plan-Gantt-chart.png)
 
-![Pert chart](images/Team-plan-Pert-chart.png)
+![Pert chart](images/Team-plan-Pert-chart1.png)
 
 \newpage
 
