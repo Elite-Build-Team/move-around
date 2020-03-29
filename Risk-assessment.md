@@ -20,8 +20,6 @@
 Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 \newpage
-\newpage
-
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -40,6 +38,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 Τελική ημ/νια παρακολούθησης κινδύνου:                                                                                                           & \multicolumn{3}{l|}{}                                                                                                                                                                  \\ \hline
 \end{tabular}
 \end{table}
+
+\newpage
+
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -59,6 +60,8 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 \end{tabular}
 \end{table}
 
+\newpage
+
 \begin{table}[]
 \begin{tabular}{|l|l|l|l|}
 \hline
@@ -77,3 +80,5 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 \begin{tabular}[c]{@{}l@{}}Τελική ημ/νια παρακολούθησης κινδύνου: Στο τέλος\\ του test του 4ου sprint 23/4\end{tabular} & \multicolumn{3}{l|}{}                                                                                                                                                                     \\ \hline
 \end{tabular}
 \end{table}
+
+
