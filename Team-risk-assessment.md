@@ -45,3 +45,11 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 * Επιμέρους κίνδυνοι κάθε μέλους:
     * ο Συμεωνίδης, έχει μεγάλο φόρτο εργασίας αυτό το εξάμηνο
     * o Δήμτσας αντιμετωπίζει σοβαρά προβλήματα συνδεσιμότητας στο Internet
+
+## Φόρμες Καταγραφής Κινδύνων
+
+![](images/Team-risk-assessment-Form-Methodology.png)
+
+\newpage
+
+![](images/Team-risk-assessment-Form-Symeonidis.png)
