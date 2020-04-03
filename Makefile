@@ -4,14 +4,14 @@ PDFENGINE = xelatex
 MAINFONT = Linux Biolinum
 
 PHASE_1_FILES = \
-	Project-plan.pdf \
-	Project-description.pdf \
-	Team-plan.pdf \
-	Risk-assessment.pdf \
-	Team-risk-assessment.pdf \
-	Feasibility-study.pdf
+	Project-plan-v0.1.pdf \
+	Project-description-v0.1.pdf \
+	Team-plan-v0.1.pdf \
+	Risk-assessment-v0.1.pdf \
+	Team-risk-assessment-v0.1.pdf \
+	Feasibility-study-v0.1.pdf
 
-EXECUTABLES = pandoc pdfunite
+EXECUTABLES = pandoc
 K := $(foreach exec,$(EXECUTABLES),\
         $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
 
@@ -19,7 +19,7 @@ K := $(foreach exec,$(EXECUTABLES),\
 clean:
 	-rm -rf $(BUILDDIR)/*
 
-$(PHASE_1_FILES): %.pdf : %.md
+$(PHASE_1_FILES): %-v0.1.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 .PHONY: phase-1
