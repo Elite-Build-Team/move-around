@@ -20,7 +20,6 @@
 Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 \newpage
-<<<<<<< HEAD
 
 Όσον αφορά το risk assesment, κρίνουμε ότι **μπορούν να γίνουν πολλά λάθη λόγω έλλειψης εμπειρίας, μη καλής επικοινωνίας με τον πελάτη, αλλά και μέσα στη σύνθεση της ομάδας**. Παρακάτω περιγράφονται αυτοί οι κίνδυνοι.
 *  Ένας πολύ πιθανός κίνδυνος είναι,  **λόγω της απειρίας στη δημιουργία project plan αλλά και στην κατανομή ανθρώπινων πόρων, να βγούμε εκτός χρονοπρογραμματισμού ή να μην δίνεται το απαραίτητο deadline σε κάθε sprint** πχ ίσως χρειαστεί να παρακολουθήσουμε κάποια courses για υλοποίηση mobile applications καθώς δεν έχουμε πολύ εμπειρία. 
@@ -35,11 +34,13 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot
 
 ## Φόρμες Καταγραφής Κινδύνων
 
-![](images/Risk-assessment-Form-Client.png)
-
-
 ![](images/Risk-assessment-Form-Scheduling.png)
 
 
+![](images/Risk-assessment-Form-Client.png)
+
+
 ![](images/Risk-assessment-Form-Testing.png)
-=======
+
+
+![](images/Risk-assessment-Form-Scrum.png)
