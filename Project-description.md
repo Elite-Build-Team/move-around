@@ -16,7 +16,7 @@
 ## Peer Reviewer
 
 ## Εργαλεία
-Markdown, VSCode, GanttProject, Pandoc, Lightshot
+Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/)
 
 \newpage
 
