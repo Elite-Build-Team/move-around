@@ -14,7 +14,6 @@
 * Ρούστας Κωνσταντίνος 1054422
 
 ## Peer Reviewer
-* Συμεωνίδης Θεόδωρος 1064870
 
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/)
