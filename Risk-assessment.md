@@ -45,3 +45,6 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 
 ![](images/Risk-assessment-Form-Scrum.png)
+
+
+![](images/Risk-assessment-Form-Knowledge.png)
