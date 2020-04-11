@@ -45,6 +45,8 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, MockFlow, [Table generator](h
 
 ![Mock-up για «Πολίτες»](images/Project-description-2.png)
 
-![Mock-up για «Φορείς»](images/Project-description-3.png)
+![Mock-up για «Φορείς»](images/Foreas.png)
 
-![Mock-up για «Δήμος»](images/Project-description-4.png)
+![Mock-up για «Δήμος»](images/Dimos1.png)
+
+![Mock-up για «Δήμος»](images/Dimos2.png)
