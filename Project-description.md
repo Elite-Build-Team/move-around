@@ -27,7 +27,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, MockFlow, [Table generator](h
 ### Changelog 
 ### v0.2
 
-Σε αυτό το παραδοτέο αναθεωρήσαμε την μορφοποίηση των mock-up screens. Οι οθόνες επαναδημιουργήθηκαν με rapid prototyping tool καθώς θεωρήθηκε θεμητή αλλαγή αφού προσδιορίστηκαν με ακρίβεια τα use-cases του project.
+Σε αυτό το παραδοτέο αναθεωρήσαμε την μορφοποίηση των mock-up screens. Οι οθόνες επαναδημιουργήθηκαν με rapid prototyping tool καθώς θεωρήθηκε θεμητή αλλαγή αφού προσδιορίστηκαν με ακρίβεια τα use-cases του project. Οι οθόνες που υλοποιήθηκαν δεν είναι όλες όσες θα έχει η εφαρμογή αλλά ενδεκτικά αυτές που θα δείχναμε στον πελάτη.
 Επίσης, προστέθηκε η επιλογή του Α.Μ.Ε.Α. για κλήση taxi και στους φορείς για εξέταση του συνόλου των αναφορών τους.
 
 \newpage
@@ -41,9 +41,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, MockFlow, [Table generator](h
 ## Mockup screens
 Παρακάτω παρουσιάζονται τα mock-upscreens για κάθε δυνατό χρήστη της εφαρμογής Move Around.
 
-![Mock-up για «A.M.E.A.»](images/Project-description-1.png)
+![Mock-up για «A.M.E.A.»](images/AMEA1.png)
 
-![Mock-up για «Πολίτες»](images/Project-description-2.png)
+![Mock-up για «Πολίτες»](images/Politis1.png)
 
 ![Mock-up για «Φορείς»](images/Foreas.png)
 
