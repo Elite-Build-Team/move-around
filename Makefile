@@ -13,7 +13,6 @@ PHASE_1_FILES = \
 
 PHASE_2_FILES = \
 	Domain-model-v0.1.pdf \
-	Robustness-diagrams-v0.1.pdf \
 	Use-cases-v0.1.pdf
 
 PHASE_2_FILES_REV = \
@@ -56,7 +55,7 @@ phase-2: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
 	@echo "Build finished!"
 
 .PHONY: phase-2-zip
-phase-1-zip: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
+phase-2-zip: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
 	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES))
 	@echo
 	@echo "Build finished!"
