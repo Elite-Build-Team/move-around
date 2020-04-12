@@ -42,24 +42,37 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ## Mockup screens
 Παρακάτω παρουσιάζονται τα mock-upscreens για κάθε δυνατό χρήστη της εφαρμογής Move Around.
 
-#### Mock-up για «A.M.E.A.
-##### Χάρτης πρόσβασης.
-![Mock-up για «A.M.E.A.»](images/Project-description-AMEA1.png)
-##### Προγραμματισμός Επίσκεψης.
-![Mock-up για «A.M.E.A.»](images/Project-description-AMEA2.png)
-##### Ευκόλως προσβάσιμα μέρη.
-![Mock-up για «A.M.E.A.»](images/Project-description-AMEA3.png)
+### Mock-up για «A.M.E.A.
 
-#### Mock-up για Πολίτες.
-##### Αναφορά προβλήματος.
-![Mock-up για «Πολίτες»](images/Project-description-Politis.png)
+![](images/Project-description-AMEA1.png)
 
-#### Mock-up για Φορείς.
-##### Προγραμματισμένες επισκέψεις.
-![Mock-up για «Φορείς»](images/Project-description-Foreas.png)
+### Προγραμματισμός Επίσκεψης.
 
-#### Mock-up για Δήμος.
-##### Διαχείριση αναφορών
-![Mock-up για «Δήμος»](images/Project-description-Dimos1.png)
-##### Ενημέρωση χάρτη
-![Mock-up για «Δήμος»](images/Project-description-Dimos2.png)
+![](images/Project-description-AMEA2.png)
+
+### Ευκόλως προσβάσιμα μέρη.
+
+![](images/Project-description-AMEA3.png)
+
+\newpage
+
+## Mock-up για Πολίτες.
+### Αναφορά προβλήματος.
+
+![](images/Project-description-Politis.png)
+
+\newpage
+
+## Mock-up για Φορείς.
+### Προγραμματισμένες επισκέψεις.
+
+![](images/Project-description-Foreas.png)
+
+\newpage
+
+## Mock-up για Δήμος.
+### Διαχείριση αναφορών
+![](images/Project-description-Dimos1.png)
+
+### Ενημέρωση χάρτη
+![](images/Project-description-Dimos2.png)
