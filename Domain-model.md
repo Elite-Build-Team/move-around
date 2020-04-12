@@ -23,7 +23,7 @@
 * Συμεωνίδης Θεόδωρος 1064870
 
 ## Εργαλεία
-Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/)
+Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm
 
 \newpage
 
