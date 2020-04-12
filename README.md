@@ -5,9 +5,7 @@
 
 ## Install prerequisites
 1. Install Linux Biolinum font from [here](https://www.fontsquirrel.com/fonts/linux-biolinum).
-2. ```bash
-    apt-get install texlive pandoc zip
-    ```
+2. `apt-get install texlive pandoc zip`
 
 ## Make PDFs/ZIP for phase-n (only for Linux)
 
