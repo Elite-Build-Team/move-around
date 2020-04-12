@@ -27,8 +27,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 \newpage
 
-![](images/Domain-Model.png)
+![Domain-Model](images/Domain-Model.png)
 
+## Περιγραφή κλάσεων
 * **Access Map** : Ο χάρτης πρόσβασης που περιλαμβάνει όλα τα σημεία ενδιαφέροντος για ένα Α.Μ.Ε.Α. . 
 * **Accessibility Friendly Place** : Οντότητα που περιλαμβάνει τις ιδιότητες ενός μέρους το οποίο είναι ευκόλως προσβάσιμο από Α.Μ.Ε.Α. .
 * **AMEA** : Οντότητα που αντιστοιχεί σε έναν χρήστη Α.Μ.Ε.Α. του συστήματος. 
