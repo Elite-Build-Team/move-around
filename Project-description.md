@@ -41,12 +41,20 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, MockFlow, [Table generator](h
 ## Mockup screens
 Παρακάτω παρουσιάζονται τα mock-upscreens για κάθε δυνατό χρήστη της εφαρμογής Move Around.
 
+#### Mock-up για «A.M.E.A.
+##### Αναφορά Προβλήματος.
 ![Mock-up για «A.M.E.A.»](images/Project-description-AMEA1.png)
 
+#### Mock-up για Πολίτες.
+##### Αναφορά Προβλήματος.
 ![Mock-up για «Πολίτες»](images/Project-description-Politis1.png)
 
+#### Mock-up για Φορείς.
+##### Προγραμματισμένες Επισκέψεις.
 ![Mock-up για «Φορείς»](images/Project-description-Foreas.png)
 
+#### Mock-up για Δήμος.
+##### Διαχείριση Αναφορών
 ![Mock-up για «Δήμος»](images/Project-description-Dimos1.png)
-
+##### Ενημέρωση Χάρτη
 ![Mock-up για «Δήμος»](images/Project-description-Dimos2.png)
