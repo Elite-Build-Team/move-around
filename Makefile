@@ -55,6 +55,6 @@ phase-2: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
 
 .PHONY: phase-2-zip
 phase-2-zip: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
-	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES))
+	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES)) $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES_REV))
 	@echo
 	@echo "Build finished!"
