@@ -17,7 +17,6 @@ PHASE_2_FILES = \
 
 PHASE_2_FILES_REV = \
 	Project-description-v0.2.pdf \
-	Team-plan-v0.2.pdf \
 	Team-risk-assessment-v0.2.pdf \
 	Risk-assessment-v0.2.pdf 
 
