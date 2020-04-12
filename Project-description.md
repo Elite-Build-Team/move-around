@@ -20,7 +20,6 @@
 * Συμεωνίδης Θεόδωρος 1064870
 
 ## Εργαλεία
-## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm
 
 \newpage
@@ -42,7 +41,8 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ## Mockup screens
 Παρακάτω παρουσιάζονται τα mock-upscreens για κάθε δυνατό χρήστη της εφαρμογής Move Around.
 
-### Mock-up για «A.M.E.A.
+## Mock-up για "A.M.E.A."
+### Χάρτης πρόσβασης.
 
 ![](images/Project-description-AMEA1.png)
 
@@ -72,7 +72,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 ## Mock-up για Δήμος.
 ### Διαχείριση αναφορών
+
 ![](images/Project-description-Dimos1.png)
 
 ### Ενημέρωση χάρτη
+
 ![](images/Project-description-Dimos2.png)
