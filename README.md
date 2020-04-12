@@ -3,14 +3,13 @@
 ## Clone project
 `git clone https://github.com/Elite-Build-Team/software-engineering-2020.git`
 
-## Make PDFs/ZIP for phase-n (only for Linux)
+## Install prerequisites
+1. Install Linux Biolinum font from [here](https://www.fontsquirrel.com/fonts/linux-biolinum).
+2. ```bash
+    apt-get install texlive pandoc zip
+    ```
 
-Prerequisites:
-1. pandoc
-2. pdfunite
-3. zip
-4. xelatex
-5. Linux Biolinum font
+## Make PDFs/ZIP for phase-n (only for Linux)
 
 E.g. for phase 1:
 ```bash
