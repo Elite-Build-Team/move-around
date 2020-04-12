@@ -48,7 +48,7 @@ phase-1-zip: $(PHASE_1_FILES)
 	@echo
 	@echo "Build finished!"
 
-.PHONE: phase-2
+.PHONY: phase-2
 phase-2: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
 	@echo
 	@echo "Build finished!"
