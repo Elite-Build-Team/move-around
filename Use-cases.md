@@ -216,5 +216,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 3.1.3 Ο χρήστης συμπληρώνει την τοποθεσία του ολογράφως και πατάει "ολοκλήρωση".  
 3.1.4 Το σύστημα επιστρέφει στην βασική ροή στο βήμα 4.
 
+\newpage
+
 ## Διάγραμμα Use Cases
-![](/images/Use-Case-Diagram.png)
+![](images/Use-Case-Diagram.png)
