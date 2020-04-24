@@ -40,13 +40,15 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 \newpage
 
 ## Ανάθεση έργου σε ανθρώπινο δυναμικό
-![Δήμτσας Γιάννης](images/Project-plan-user-4.png)
+![Δήμτσας Γιάννης](images/Project-plan-dimtsas.png)
 
-![Μαντάς Ελευθέριος](images/Project-plan-user-3.png)
+![Μαντάς Ελευθέριος](images/Project-plan-mantas.png)
 
-![Ρούστας Κωνσταντίνος](images/Project-plan-user-1.png)
+![Ρούστας Κωνσταντίνος](images/Project-plan-roustas.png)
 
-![Συμεωνίδης Θεόδωρος](images/Project-plan-user-2.png)
+![Συμεωνίδης Θεόδωρος](images/Project-plan-symeonidis.png)
+
+![UI/UX designer](images/Project-plan-ui-designer.png)
 
 \newpage
 
