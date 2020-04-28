@@ -33,16 +33,25 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 Παρακάτω παρατίθεται ένας αρχικός χρονοπρογραμματισμός για την εργασία μας ως ομάδα.
 Να σημειωθεί ότι η αρχική μας εκτίμηση για την υλοποίηση του πρότζεκτ μπορεί να διαφέρει σημαντικά, αφού με τις πρόσφατες εξελίξεις λόγω της έξαρσης του νέου ιού, οι προθεσμίες αλλάζουν. Ως έναρξη του πρότζεκτ έχει ορισθεί η 2/3/2020 και ως λήξη του η 24/5/2020. 
 
-Ως **milestones** έχουν ορισθεί τα **sprints** των δύο εβδομάδων, αφού τότε γίνεται η απαραίτητη πρόοδος.
+Ως **milestones** έχουν ορισθεί τα 4 milestones της *ICONIX* **Agile** οργάνωσης, τα οποία είναι τα εξής:
+* Milestone #1: *Requirements Review*
+* Milestone #2: *Preliminary Design Review*
+* Milestone #3: *Detailed / Critical Desing Review*
+* Milestone #4: *Testing and Delivery*
 
 Ως **τυπικά υποέργα (ΤΥ)** έχουν ορισθεί τα παραδοτέα κάθε *sprint cycle*, τα οποία αναφέρονται στα charts με τα ονόματα τους. Οι εξαρτήσεις τους, όπως απεικονίζονται, ακολουθούν την *ICONIX* **Agile** οργάνωση και πάντα σύμφωνη με τη **SCRUM** method που χρησιμοποιεί η ομάδα.
 
 Επίσης, τα σαββατοκύριακα έχουν συνυπολογιστεί κανονικά ως εργάσιμες μέρες για την εργασία στο πρότζεκτ.
 
 
-![Gantt chart](images/Team-plan-Gantt-chart.png)
+![Gantt chart](images/Team-plan-Gantt-chartv0.2.png)
 
-![Pert chart](images/Team-plan-Pert-chart1.png)
+![Pert chart](images/Team-plan-Pert-chartv0.2.png)
+
+### Critical Path
+To critical path απεικονίζεται στο *PERT Chart* με κόκκινες ακμές. Η συνολική του διάρκεια σε ημέρες είναι **72**.
+
+**Ροή** : TY1(8days) &rarr; TY3(4days) &rarr; **Milestone #1** &rarr; TY9(7days) &rarr; TY10(4days) &rarr; TY15(3days) &rarr; **Milestone #2** &rarr; TY19(8days) &rarr; TY20(4days) &rarr; TY23(3days) &rarr; TY24(5days) &rarr; TY26(3days) &rarr; TY27(4days) &rarr; **Milestone #3** &rarr; TY30(2days) &rarr; TY34(3days) &rarr; TY36(2days) &rarr; TY37(3days) &rarr; TY39(4days) &rarr; TY40(5days) &rarr; **Milestone #4** .
 
 \newpage
 
@@ -53,9 +62,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 Για την οργάνωση της *SCRUM* μεθόδου που θα χρησιμοποιήσουμε, στήσαμε ένα [Trello Board](https://trello.com/b/0cXG8Lum/software-engineering-project) το οποίο ανανεώνεται καθημερινά από τα μέλη της ομάδας, ανάλογα με το **progress** που υπάρχει. Επίσης χρησιμοποιείται και για *brainstorming*, *customer discussion*.
 
-**Scrum Master : Ρούστας Κωνσταντίνος**
+**Scrum Master** : Ρούστας Κωνσταντίνος
 
-**Development Team : Δήμτσας Ιωάννης, Συμεωνίδης Θεόδωρος, Μαντάς Ελευθέριος**
+**Development Team** : Δήμτσας Ιωάννης, Συμεωνίδης Θεόδωρος, Μαντάς Ελευθέριος
 
 ## Team Communication
 Η συννενόηση της ομάδας είναι κομβική για την υλοποίηση του πρότζεκτ, τη σωστή κατανομή εργασίας και την παραγωγικότητα. Αρχικά, τα meetings είχε εκτιμηθεί ότι θα γίνονται στην πλειοψηφία τους *face-to-face*, ωστόσο οι πρόσφατες εξελίξεις με τον νέο ιό τελικά μας οδήγησαν στο να κάνουμε ***online meetings***.
