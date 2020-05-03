@@ -36,6 +36,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 * Αφαίρεση της κλάσης Report Management.
 * Ενημέρωση του διαγράμματος σχετικά με τις παραπάνω αλλαγές.
 * Προσθήκη μετάφρασης στα ονόματα των κλάσεων.
+* Ενημέρωση των περιγραφών ορισμένων κλάσεων.
 
 \newpage
 
