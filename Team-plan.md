@@ -20,6 +20,15 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 \newpage
 
+## Changelog
+### v0.2 
+* Αλλαγή των milestones.
+* Εκ νέου δημιουργία PERT chart.
+* Πρόσθεση milestones στο Gantt chart.
+* Μικρές αλλαγές στην μορφοποίηση.
+
+\newpage
+
 ## Σύνθεση ομάδας
 
 | Ονοματεπώνυμο μέλους | Α.Μ.    | Έτος |
