@@ -23,9 +23,11 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ## Changelog
 ### v0.2 
 
-* Μικρές αλλαγές στη μορφοποίηση.
+* Επανασχεδίαση του PERT chart στο VisualParadigm.
+* Προσθήκη milestones στο PERT και Gantt chart.
 * Προσθήκη της ανάγκης για πρόσληψη UI/UX designer στο συνολικό χρονοπρογραμματισμό και ανανέωση των κατάλληλων πεδίων ανάθεσης έργου σε ανθρώπινο δυναμικό και κόστους.
 * Αφαίρεση της συνδρομής στο Lucid-chart από τα κόστη και προσθήκη του τέλους ενεργοποίησης του App Store.
+* Μικρές αλλαγές στη μορφοποίηση.
 
 \newpage
 
