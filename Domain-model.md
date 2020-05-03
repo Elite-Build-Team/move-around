@@ -27,6 +27,18 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 \newpage
 
+## Changelog
+### v0.2 
+* Προσθήκη πεδίων στις σε όλες κλάσεις.
+* Αλλαγή μερικών βελών.
+* Προσθήκη των κλάσεων User, Issues Under Construction, , Pending Issues, Service Info.
+* Μετονομασία της κλάσης Taxi σε Taxi Booking.
+* Αφαίρεση της κλάσης Report Management.
+* Ενημέρωση του διαγράμματος σχετικά με τις παραπάνω αλλαγές.
+* Προσθήκη μετάφρασης στα ονόματα των κλάσεων.
+
+\newpage
+
 ![Domain-Model](images/Domain-Model.png)
 
 ## Περιγραφή κλάσεων
