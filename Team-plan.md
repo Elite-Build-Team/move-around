@@ -1,4 +1,4 @@
-% Team Plan v0.1
+% Team Plan v0.2
 % Move around
 % ![](images/Logo.jpg)
 
@@ -43,6 +43,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 Να σημειωθεί ότι η αρχική μας εκτίμηση για την υλοποίηση του πρότζεκτ μπορεί να διαφέρει σημαντικά, αφού με τις πρόσφατες εξελίξεις λόγω της έξαρσης του νέου ιού, οι προθεσμίες αλλάζουν. Ως έναρξη του πρότζεκτ έχει ορισθεί η 2/3/2020 και ως λήξη του η 24/5/2020. 
 
 Ως **milestones** έχουν ορισθεί τα 4 milestones της *ICONIX* **Agile** οργάνωσης, τα οποία είναι τα εξής:
+
 * Milestone #1: *Requirements Review*
 * Milestone #2: *Preliminary Design Review*
 * Milestone #3: *Detailed / Critical Desing Review*
