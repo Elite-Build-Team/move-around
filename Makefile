@@ -20,6 +20,18 @@ PHASE_2_FILES_REV = \
 	Team-risk-assessment-v0.2.pdf \
 	Risk-assessment-v0.2.pdf 
 
+PHASE_3_FILES = \
+	Robustness-diagrams-v0.1.pdf
+
+PHASE_3_FILES_REV_2 = \
+	Project-plan-v0.2.pdf \
+	Domain-model-v0.2.pdf \
+	Use-cases-v0.2.pdf \
+	Team-plan-v0.2.pdf \
+
+PHASE_3_FILES_REV_3 = \
+	Risk-assessment-v0.3.pdf 
+
 EXECUTABLES = pandoc
 K := $(foreach exec,$(EXECUTABLES),\
         $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
@@ -35,6 +47,15 @@ $(PHASE_2_FILES): %-v0.1.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 $(PHASE_2_FILES_REV): %-v0.2.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_3_FILES): %-v0.1.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_3_FILES_REV_2): %-v0.2.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_3_FILES_REV_3): %-v0.3.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 .PHONY: phase-1
@@ -56,5 +77,16 @@ phase-2: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
 .PHONY: phase-2-zip
 phase-2-zip: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
 	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES)) $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES_REV))
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-3
+phase-3: $(PHASE_3_FILES) $(PHASE_3_FILES_REV_2) $(PHASE_3_FILES_REV_3)
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-3-zip
+phase-3-zip: $(PHASE_3_FILES) $(PHASE_3_FILES_REV_2) $(PHASE_3_FILES_REV_3)
+	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_3_FILES)) $(addprefix $(BUILDDIR)/, $(PHASE_3_FILES_REV_2)) $(addprefix $(BUILDDIR)/, $(PHASE_3_FILES_REV_3))
 	@echo
 	@echo "Build finished!"
