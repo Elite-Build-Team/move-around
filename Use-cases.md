@@ -29,6 +29,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 ## Changelog
 ### v0.2
+<span style="color:blue;">Word up</span>
 * Προσθήκη αρίθμησης στα use cases.
 * Use case 2, 7, 10 : Μικρές αλλαγές στην σύνταξη.
 * Use case 3, 4, 5 : Ολική ανασύνταξη μετά από την δημιουργία του αντίστοιχου Robustness-Diagram και την ανανέωση του Domain-model.
