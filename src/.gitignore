@@ -122,4 +122,5 @@ venv.bak/
 pip-selfcheck.json
 bin/
 
+**/lib64
 # End of https://www.gitignore.io/api/venv,python
