@@ -1,4 +1,4 @@
-% Robustness Diagrams v0.1
+% Robustness Diagrams v0.2
 % Move around
 % ![](images/Logo.jpg)
 

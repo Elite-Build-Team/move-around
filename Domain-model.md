@@ -1,4 +1,4 @@
-% Domain Model v0.2
+% Domain Model v0.3
 % Move around
 % ![](images/Logo.jpg)
 
