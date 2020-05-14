@@ -1,6 +1,6 @@
 ## Coding style
 
-The coding style that we will stick to is [PEP8](https://www.python.org/dev/peps/pep-0008)
+The coding style that we will stick to is [PEP8](https://www.python.org/dev/peps/pep-0008).
 
 ## PEP8 Cheatsheet
 
