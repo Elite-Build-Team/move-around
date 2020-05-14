@@ -11,14 +11,16 @@ PHASE_1_FILES = \
 	Team-risk-assessment-v0.1.pdf \
 	Feasibility-study-v0.1.pdf
 
+
 PHASE_2_FILES = \
 	Domain-model-v0.1.pdf \
 	Use-cases-v0.1.pdf
 
-PHASE_2_FILES_REV = \
+PHASE_2_FILES_REV_2 = \
 	Project-description-v0.2.pdf \
 	Team-risk-assessment-v0.2.pdf \
 	Risk-assessment-v0.2.pdf 
+
 
 PHASE_3_FILES = \
 	Robustness-diagrams-v0.1.pdf
@@ -31,6 +33,19 @@ PHASE_3_FILES_REV_2 = \
 
 PHASE_3_FILES_REV_3 = \
 	Risk-assessment-v0.3.pdf 
+
+
+PHASE_4_FILES = \
+	Sequence-diagrams-v0.1.pdf \
+	Project-code-v0.1.pdf
+
+PHASE_4_FILES_REV_2 = \
+	Robustness-diagrams-v0.2.pdf
+
+PHASE_4_FILES_REV_3 = \
+	Domain-model-v0.3.pdf \
+	Use-cases-v0.3.pdf
+
 
 EXECUTABLES = pandoc
 K := $(foreach exec,$(EXECUTABLES),\
@@ -58,6 +73,16 @@ $(PHASE_3_FILES_REV_2): %-v0.2.pdf : %.md
 $(PHASE_3_FILES_REV_3): %-v0.3.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
+$(PHASE_4_FILES): %-v0.1.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_4_FILES_REV_2): %-v0.2.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_4_FILES_REV_3): %-v0.3.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+
 .PHONY: phase-1
 phase-1: $(PHASE_1_FILES)
 	@echo
@@ -65,9 +90,12 @@ phase-1: $(PHASE_1_FILES)
 
 .PHONY: phase-1-zip
 phase-1-zip: $(PHASE_1_FILES)
-	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_1_FILES))
+	cd build
+	zip -r software-engineering-2020.zip $(PHASE_1_FILES) $
+	cd ..
 	@echo
 	@echo "Build finished!"
+
 
 .PHONY: phase-2
 phase-2: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
@@ -75,10 +103,13 @@ phase-2: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
 	@echo "Build finished!"
 
 .PHONY: phase-2-zip
-phase-2-zip: $(PHASE_2_FILES) $(PHASE_2_FILES_REV)
-	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES)) $(addprefix $(BUILDDIR)/, $(PHASE_2_FILES_REV))
+phase-2-zip: $(PHASE_2_FILES) $(PHASE_2_FILES_REV_2)
+	cd build
+	zip -r software-engineering-2020.zip $(PHASE_2_FILES) $(PHASE_2_FILES_REV_2)
+	cd ..
 	@echo
 	@echo "Build finished!"
+
 
 .PHONY: phase-3
 phase-3: $(PHASE_3_FILES) $(PHASE_3_FILES_REV_2) $(PHASE_3_FILES_REV_3)
@@ -87,6 +118,23 @@ phase-3: $(PHASE_3_FILES) $(PHASE_3_FILES_REV_2) $(PHASE_3_FILES_REV_3)
 
 .PHONY: phase-3-zip
 phase-3-zip: $(PHASE_3_FILES) $(PHASE_3_FILES_REV_2) $(PHASE_3_FILES_REV_3)
-	zip -r $(BUILDDIR)/software-engineering-2020.zip $(addprefix $(BUILDDIR)/, $(PHASE_3_FILES)) $(addprefix $(BUILDDIR)/, $(PHASE_3_FILES_REV_2)) $(addprefix $(BUILDDIR)/, $(PHASE_3_FILES_REV_3))
+	cd build
+	zip -r software-engineering-2020.zip $(PHASE_3_FILES) $(PHASE_3_FILES_REV_2) $(PHASE_3_FILES_REV_3)
+	cd ..
+	@echo
+	@echo "Build finished!"
+
+
+.PHONY: phase-4
+phase-4: $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-4-zip
+.ONESHELL:
+phase-4-zip: $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
+	cd build
+	zip -r software-engineering-2020.zip $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
+	cd ..
 	@echo
 	@echo "Build finished!"
