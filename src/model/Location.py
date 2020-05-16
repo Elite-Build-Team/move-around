@@ -1,26 +1,34 @@
 # -*- coding: UTF-8 -*-
+from typing import Tuple
+
+from model import LocationType
+
+
 class Location(object):
-	def get_coordinates(self):
-		"""@ReturnType (long,lat)"""
-		pass
+    def __init__(self):
+        self.coordinates: Tuple[int, int] = (-1, -1)
+        self.type: LocationType = None
 
-	def set_coordinates(self, aCoordinates):
-		"""@ParamType aCoordinates (long,lat)
-		@ReturnType void"""
-		pass
+    @property
+    def coordinates(self):
+        return self.__coordinates
 
-	def get_type(self):
-		"""@ReturnType enum(Toilet,Obstacle, Parking, AFP, Public Service)"""
-		pass
+    @coordinates.setter
+    def coordinates(self, value):
+        self.__coordinates = value
 
-	def set_type(self, aType):
-		"""@ParamType aType enum(Toilet,Obstacle, Parking, AFP, Public Service)
-		@ReturnType void"""
-		pass
+    @coordinates.deleter
+    def coordinates(self):
+        del self.__coordinates
 
-	def __init__(self):
-		self.__coordinates = None
-		"""@AttributeType (long,lat)"""
-		self.__type = None
-		"""@AttributeType enum(Toilet,Obstacle, Parking, AFP, Public Service)"""
+    @property
+    def type(self):
+        return self.__type
 
+    @type.setter
+    def type(self, value):
+        self.__type = value
+
+    @type.deleter
+    def type(self):
+        del self.__type

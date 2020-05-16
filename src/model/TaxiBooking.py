@@ -1,51 +1,47 @@
 # -*- coding: UTF-8 -*-
-import AMEA
-import Location
+from datetime import datetime
+
+from model import AMEA, Location
+
 
 class TaxiBooking(object):
-	def get_date(self):
-		"""@ReturnType Date"""
-		pass
+    def __init__(self):
+        self.date: datetime = None
+        self.amea: AMEA = None
+        self.location: Location = None
 
-	def set_date(self, aDate):
-		"""@ParamType aDate Date
-		@ReturnType void"""
-		pass
+    @property
+    def date(self):
+        return self.__date
 
-	def get_time(self):
-		"""@ReturnType Time"""
-		pass
+    @date.setter
+    def date(self, value):
+        self.__date = value
 
-	def set_time(self, aTime):
-		"""@ParamType aTime Time
-		@ReturnType void"""
-		pass
+    @date.deleter
+    def date(self):
+        del self.__date
 
-	def get_amea(self):
-		"""@ReturnType AMEA"""
-		pass
+    @property
+    def amea(self):
+        return self.__amea
 
-	def set_amea(self, aAmea):
-		"""@ParamType aAmea AMEA
-		@ReturnType void"""
-		pass
+    @amea.setter
+    def amea(self, value):
+        self.__amea = value
 
-	def get_location(self):
-		"""@ReturnType Location"""
-		pass
+    @amea.deleter
+    def amea(self):
+        del self.__amea
 
-	def set_location(self, aLocation):
-		"""@ParamType aLocation Location
-		@ReturnType void"""
-		pass
+    @property
+    def location(self):
+        return self.__location
 
-	def __init__(self):
-		self.__date = None
-		"""@AttributeType Date"""
-		self.__time = None
-		"""@AttributeType Time"""
-		self.__amea = None
-		"""@AttributeType AMEA"""
-		self.__location = None
-		"""@AttributeType Location"""
+    @location.setter
+    def location(self, value):
+        self.__location = value
 
+    @location.deleter
+    def location(self):
+        del self.__location

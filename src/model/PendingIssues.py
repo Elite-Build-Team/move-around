@@ -1,27 +1,27 @@
 # -*- coding: UTF-8 -*-
-import ReportIssue
+from typing import List
+
+from model import ReportIssue
+
 
 class PendingIssues(object):
-	def get_pending_issues(self):
-		"""@ReturnType ReportIssue*"""
-		pass
+    def __init__(self):
+        self.pending_issues: List[ReportIssue] = []
 
-	def set_pending_issues(self, *aPending_issues):
-		"""@ParamType aPending_issues ReportIssue*
-		@ReturnType void"""
-		pass
+    @property
+    def pending_issues(self):
+        return self.__pending_issues
 
-	def add_pending_issue(self, aPending_issue):
-		"""@ParamType aPending_issue PendingIssue
-		@ReturnType void"""
-		pass
+    @pending_issues.setter
+    def pending_issues(self, value):
+        self.__pending_issues = value
 
-	def delete_pending_issue(self, aPending_issue):
-		"""@ParamType aPending_issue PendingIssue
-		@ReturnType void"""
-		pass
+    @pending_issues.deleter
+    def pending_issues(self):
+        del self.__pending_issues
 
-	def __init__(self):
-		self.__pending_issues = None
-		"""@AttributeType ReportIssue*"""
+    def add_pending_issue(self, pending_issue: ReportIssue):
+        self.pending_issues.append(pending_issue)
 
+    def delete_pending_issue(self, pending_issue: ReportIssue):
+        self.pending_issues.remote(pending_issue)

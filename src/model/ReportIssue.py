@@ -1,44 +1,49 @@
 # -*- coding: UTF-8 -*-
-import Photograph
-import Location
+from model import Photograph, Location, ReportIssueStatus
+
 
 class ReportIssue(object):
-	def get_photograph(self):
-		"""@ReturnType Photograph"""
-		pass
+    def __init__(self):
+        self.photograph: Photograph = None
+        self.location: Location = None
+        self.summary: str = ''
+        self.status: ReportIssueStatus = None
 
-	def set_photograph(self, aPhotograph):
-		"""@ParamType aPhotograph Photograph
-		@ReturnType void"""
-		pass
+    @property
+    def photograph(self):
+        return self.__photograph
 
-	def get_location(self):
-		"""@ReturnType Location"""
-		pass
+    @photograph.setter
+    def photograph(self, value):
+        self.__photograph = value
 
-	def set_location(self, aLocation):
-		"""@ParamType aLocation Location
-		@ReturnType void"""
-		pass
+    @photograph.deleter
+    def photograph(self):
+        del self.__photograph
 
-	def get_summary(self):
-		"""@ReturnType string"""
-		pass
+    @property
+    def location(self):
+        return self.__location
 
-	def set_summary(self, aSummary):
-		"""@ParamType aSummary string
-		@ReturnType void"""
-		pass
+    @location.setter
+    def location(self, value):
+        self.__location = value
 
-	def is_pending(self):
-		"""@ReturnType bool"""
-		pass
+    @location.deleter
+    def location(self):
+        del self.__location
 
-	def __init__(self):
-		self.__photograph = None
-		"""@AttributeType Photograph"""
-		self.__location = None
-		"""@AttributeType Location"""
-		self.__summary = None
-		"""@AttributeType string"""
+    @property
+    def summary(self):
+        return self.__summary
 
+    @summary.setter
+    def summary(self, value):
+        self.__summary = value
+
+    @summary.deleter
+    def summary(self):
+        del self.__summary
+
+    def is_pending(self) -> bool:
+        return self.status == ReportIssueStatus.PENDING

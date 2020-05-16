@@ -1,45 +1,35 @@
 # -*- coding: UTF-8 -*-
+import datetime
+
+from model import ScheduledMeetingStatus
+
+
 class ScheduledMeeting(object):
-	def get_date(self):
-		"""@ReturnType Date"""
-		pass
+    def __init__(self):
+        self.datetime: datetime = None
+        self.public_service_name: str = ''
+        self.status: ScheduledMeetingStatus = None
 
-	def set_date(self, aDate):
-		"""@ParamType aDate Date
-		@ReturnType void"""
-		pass
+    @property
+    def datetime(self):
+        return self.__datetime
 
-	def get_time(self):
-		"""@ReturnType Time"""
-		pass
+    @datetime.setter
+    def datetime(self, value):
+        self.__datetime = value
 
-	def set_time(self, aTime):
-		"""@ParamType aTime Time
-		@ReturnType void"""
-		pass
+    @datetime.deleter
+    def datetime(self):
+        del self.__datetime
 
-	def get_public_service_name(self):
-		"""@ReturnType string"""
-		pass
+    @property
+    def public_service_name(self):
+        return self.__public_service_name
 
-	def set_public_service_name(self, aPublic_service_name):
-		"""@ParamType aPublic_service_name string
-		@ReturnType void"""
-		pass
+    @public_service_name.setter
+    def public_service_name(self, value):
+        self.__public_service_name = value
 
-	def add_scheduled_meeting(self, aScheduledMeeting):
-		"""@ReturnType void"""
-		pass
-
-	def delete_scheduled_meeting(self, aScheduledMeeting):
-		"""@ReturnType void"""
-		pass
-
-	def __init__(self):
-		self.__date = None
-		"""@AttributeType Date"""
-		self.__time = None
-		"""@AttributeType Time"""
-		self.__public_service_name = None
-		"""@AttributeType string"""
-
+    @public_service_name.deleter
+    def public_service_name(self):
+        del self.__public_service_name

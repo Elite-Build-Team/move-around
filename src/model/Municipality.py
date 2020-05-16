@@ -1,40 +1,47 @@
 # -*- coding: UTF-8 -*-
-import IssuesUnderConstruction
-import User
+from typing import List
+
+from model import PendingIssues, IssuesUnderConstruction, ServiceInfo, User
+
 
 class Municipality(User):
-	def get_rending_issues(self):
-		"""@ReturnType Pending Issues"""
-		pass
+    def __init__(self):
+        self.pending_issues: PendingIssues = None
+        self.under_construction: IssuesUnderConstruction = None
+        self.service_catalog: List[ServiceInfo] = []
 
-	def set_pending_issues(self, aPending_issues):
-		"""@ParamType aPending_issues Pending Issues
-		@ReturnType void"""
-		pass
+    @property
+    def pending_issues(self):
+        return self.__pending_issues
 
-	def get_under_construction(self):
-		"""@ReturnType IssuesUnderConstruction"""
-		pass
+    @pending_issues.setter
+    def pending_issues(self, value):
+        self.__pending_issues = value
 
-	def set_under_construction(self, aUnder_construction):
-		"""@ParamType aUnder_construction IssuesUnderConstruction
-		@ReturnType void"""
-		pass
+    @pending_issues.deleter
+    def pending_issues(self):
+        del self.__pending_issues
 
-	def get_service_catalog(self):
-		"""@ReturnType Service Info*"""
-		pass
+    @property
+    def under_construction(self):
+        return self.__under_construction
 
-	def set_service_catalog(self, *aService_catalog):
-		"""@ParamType aService_catalog Service Info*
-		@ReturnType void"""
-		pass
+    @under_construction.setter
+    def under_construction(self, value):
+        self.__under_construction = value
 
-	def __init__(self):
-		self.__pending_issues = None
-		"""@AttributeType Pending Issues"""
-		self.__under_construction = None
-		"""@AttributeType IssuesUnderConstruction"""
-		self.__service_catalog = None
-		"""@AttributeType Service Info*"""
+    @under_construction.deleter
+    def under_construction(self):
+        del self.__under_construction
 
+    @property
+    def service_catalog(self):
+        return self.__service_catalog
+
+    @service_catalog.setter
+    def service_catalog(self, value):
+        self.__service_catalog = value
+
+    @service_catalog.deleter
+    def service_catalog(self):
+        del self.__service_catalog

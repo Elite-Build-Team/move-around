@@ -1,39 +1,37 @@
 # -*- coding: UTF-8 -*-
-import Location
+from typing import List
+
+from model import Location
+
 
 class AccessMap(object):
-	def get_location(self):
-		"""@ReturnType Location*"""
-		pass
+    def __init__(self):
+        self.locations: List[Location] = []
 
-	def set_location(self, *aLocation):
-		"""@ParamType aLocation Location*
-		@ReturnType void"""
-		pass
+    @property
+    def locations(self):
+        return self.__locations
 
-	def get_obstacles(self):
-		"""@ReturnType Obstacle*"""
-		pass
+    @locations.setter
+    def locations(self, value):
+        self.__locations = value
 
-	def get_toilets(self):
-		"""@ReturnType Toilets*"""
-		pass
+    @locations.deleter
+    def locations(self):
+        del self.__locations
 
-	def get_parkings(self):
-		"""@ReturnType Parking*"""
-		pass
+    def add_location(self, location):
+        self.locations.append(location)
 
-	def add_location(self, aLocation):
-		"""@ParamType aLocation Location
-		@ReturnType void"""
-		pass
+    def delete_location(self, location):
+        self.locations.delete(location)
 
-	def delete_location(self, aLocation):
-		"""@ParamType aLocation Location
-		@ReturnType void"""
-		pass
+    # TODO Replace these three methods with get_location_by_type()
+    def get_obstacles(self):
+        return [location for location in self.locations if location.type == LocationType.Obstacle]
 
-	def __init__(self):
-		self.__location = None
-		"""@AttributeType Location*"""
+    def get_parkings(self):
+        return [location for location in self.locations if location.type == LocationType.Parking]
 
+    def get_toilets(self):
+        return [location for location in self.locations if location.type == LocationType.Toilet]

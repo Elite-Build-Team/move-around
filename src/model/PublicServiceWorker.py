@@ -1,51 +1,48 @@
 # -*- coding: UTF-8 -*-
-import ScheduledMeeting
-import ReportIssue
-import User
+from datetime import datetime
+from typing import List
+
+from model import User, ScheduledMeeting
+
 
 class PublicServiceWorker(User):
-	def get_meetings(self):
-		"""@ReturnType ScheduledMeeting*"""
-		pass
+    def __init__(self, ):
+        self.public_service_name: str = ''
+        self.meetings: List[ScheduledMeeting] = []
 
-	def set_meetings(self, *aMeetings):
-		"""@ParamType aMeetings ScheduledMeeting*
-		@ReturnType void"""
-		pass
+    @property
+    def meetings(self):
+        return self.__meetings__
 
-	def get_public_service_name(self):
-		"""@ReturnType string"""
-		pass
+    @meetings.setter
+    def meetings(self, value):
+        self.__meetings = value
 
-	def set_public_service_name(self, aPublic_service_name):
-		"""@ParamType aPublic_service_name string
-		@ReturnType void"""
-		pass
+    @meetings.deleter
+    def meetings(self):
+        del self.__meetings
 
-	def get_reported_issues(self):
-		"""@ReturnType ReportIssue*"""
-		pass
+    @property
+    def public_service_name(self):
+        return self.__public_service_name
 
-	def set_reported_issues(self, *aReported_issues):
-		"""@ParamType aReported_issues ReportIssue*
-		@ReturnType void"""
-		pass
+    @public_service_name.setter
+    def public_service_name(self, value):
+        self.__public_service_name = value
 
-	def add_report_issue(self, aReport_issue):
-		"""@ParamType aReport_issue ReportIssue
-		@ReturnType void"""
-		pass
+    @public_service_name.deleter
+    def public_service_name(self):
+        del self.__public_service_name
 
-	def delete_report_issue(self, aReport_issue):
-		"""@ParamType aReport_issue ReportIssue
-		@ReturnType void"""
-		pass
+    def add_scheduled_meeting(self, meeting: ScheduledMeeting):
+        if self.is_meeting_datetime_free(meeting.datetime):
+            self.meetings.append(meeting)
 
-	def __init__(self):
-		self.__meetings = None
-		"""@AttributeType ScheduledMeeting*"""
-		self.__public_service_name = None
-		"""@AttributeType string"""
-		self.__reported_issues = None
-		"""@AttributeType ReportIssue*"""
+    def is_meeting_datetime_free(self, meeting_datetime: datetime) -> bool:
+        if meeting_datetime in [meeting.datetime for meeting in self.meetings]:
+            return False
+        else:
+            return True
 
+# TODO is_service_free
+# TODO is_meeting_free

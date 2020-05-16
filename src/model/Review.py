@@ -1,26 +1,29 @@
 # -*- coding: UTF-8 -*-
 class Review(object):
-	def get_description(self):
-		"""@ReturnType string"""
-		pass
+    def __init__(self):
+        self.description: str = None
+        self.stars: int = None
 
-	def set_description(self, aDescription):
-		"""@ParamType aDescription string
-		@ReturnType void"""
-		pass
+    @property
+    def description(self):
+        return self.__description
 
-	def get_stars(self):
-		"""@ReturnType int"""
-		pass
+    @description.setter
+    def description(self, value):
+        self.__description = value
 
-	def set_stars(self, aStars):
-		"""@ParamType aStars int
-		@ReturnType void"""
-		pass
+    @description.deleter
+    def description(self):
+        del self.__description
 
-	def __init__(self):
-		self.description = None
-		"""@AttributeType string"""
-		self.stars = None
-		"""@AttributeType int"""
+    @property
+    def stars(self):
+        return self.__stars
 
+    @stars.setter
+    def stars(self, value):
+        self.__stars = value
+
+    @stars.deleter
+    def stars(self):
+        del self.__stars

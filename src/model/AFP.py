@@ -1,63 +1,38 @@
 # -*- coding: UTF-8 -*-
-import Location
-import Review
+
+from typing import List
+
+from model import Location, Review
+
 
 class AFP(object):
-	def get_location(self):
-		"""@ReturnType Location"""
-		pass
+    def __init__(self):
+        self.location: Location = None
+        self.reviews: List[Review] = []
 
-	def set_location(self, aLocation):
-		"""@ParamType aLocation Location
-		@ReturnType void"""
-		pass
+    @property
+    def location(self):
+        return self.__location
 
-	def get_reviews(self):
-		"""@ReturnType Review*"""
-		pass
+    @location.setter
+    def location(self, value):
+        self.__location = value
 
-	def set_reviews(self, *aReviews):
-		"""@ParamType aReviews Review*
-		@ReturnType void"""
-		pass
+    @location.deleter
+    def location(self):
+        del self.__location
 
-	def add_review(self, aReview):
-		"""@ParamType aReview Review
-		@ReturnType void"""
-		pass
+    @property
+    def reviews(self):
+        return self.__reviews
 
-	def delete_review(self, aReview):
-		"""@ParamType aReview Review
-		@ReturnType void"""
-		pass
+    @reviews.setter
+    def reviews(self, value):
+        self.__reviews = value
 
-	def setLocation(self, aLocation):
-		""""""@ParamType aLocation Location"""
-		@ParamType aLocation Location"""
-		self.location = aLocation
+    @reviews.deleter
+    def reviews(self):
+        del self.__reviews
 
-	def getLocation(self):
-		""""""@ReturnType Location"""
-		@ReturnType Location"""
-		return self.location
-
-	def setReviews(self, *aReviews):
-		""""""@ParamType aReviews Review*"""
-		@ParamType aReviews Review*"""
-		self.__reviews = aReviews
-
-	def getReviews(self):
-		""""""@ReturnType Review*"""
-		@ReturnType Review*"""
-		return self.__reviews
-
-	def __init__(self):
-		self.location = None
-		"""@AttributeType Location"""
-		self.__reviews = None
-		"""@AttributeType Review*"""
-		self._ = None
-		"""@AttributeType Review
-		# @AssociationType Review
-		# @AssociationKind Composition"""
-
+    def add_review(self, review):
+        self.reviews.append(review)

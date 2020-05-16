@@ -1,62 +1,38 @@
 # -*- coding: UTF-8 -*-
-import Location
-import AFP
-import ReportIssue
-import User
+from typing import List
+
+from model import User, Location, AFP
+
 
 class AMEA(User):
-	def get_current_location(self):
-		"""@ReturnType Location"""
-		pass
+    def __init__(self):
+        self.current_location: Location = None
+        self.liked_afp: List[AFP] = []
+        self.taxi_bookings = None
 
-	def set_current_location(self, aCurrent_location):
-		"""@ParamType aCurrent_location Location
-		@ReturnType void"""
-		pass
+    @property
+    def current_location(self):
+        return self.__current_location
 
-	def get_liked_afp(self):
-		"""@ReturnType AFP*"""
-		pass
+    @current_location.setter
+    def current_location(self, value):
+        self.__current_location = value
 
-	def set_liked_afp(self, *aLiked_afp):
-		"""@ParamType aLiked_afp AFP*
-		@ReturnType void"""
-		pass
+    @current_location.deleter
+    def current_location(self):
+        del self.__current_location
 
-	def get_reported_issues(self):
-		"""@ReturnType ReportIssue*"""
-		pass
+    @property
+    def liked_afp(self):
+        return self.__liked_afp
 
-	def set_reported_issues(self, *aReported_issues):
-		"""@ParamType aReported_issues ReportIssue*
-		@ReturnType void"""
-		pass
+    @liked_afp.setter
+    def liked_afp(self, value):
+        self.__liked_afp = value
 
-	def add_report_issue(self, aReport_issue):
-		"""@ParamType aReport_issue ReportIssue
-		@ReturnType void"""
-		pass
+    @liked_afp.deleter
+    def liked_afp(self):
+        del self.__liked_afp
 
-	def delete_report_issue(self, aReport_issue):
-		"""@ParamType aReport_issue ReportIssue
-		@ReturnType void"""
-		pass
-
-	def add_liked_afp(self, aAfp):
-		"""@ParamType aAfp AFP
-		@ReturnType void"""
-		pass
-
-	def delete_liked_afp(self, aAfp):
-		"""@ParamType aAfp AFP
-		@ReturnType void"""
-		pass
-
-	def __init__(self):
-		self.__current_location = None
-		"""@AttributeType Location"""
-		self.__liked_afp = None
-		"""@AttributeType AFP*"""
-		self.__reported_issues = None
-		"""@AttributeType ReportIssue*"""
-
+    def add_liked_afp(self, afp):
+        self.liked_afp.append(afp)

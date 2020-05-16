@@ -1,26 +1,29 @@
 # -*- coding: UTF-8 -*-
 class ServiceInfo(object):
-	def get_phone(self):
-		"""@ReturnType string"""
-		pass
+    def __init__(self):
+        self.phone: str = ''
+        self.name: str = ''
 
-	def set_phone(self, aPhone):
-		"""@ParamType aPhone string
-		@ReturnType void"""
-		pass
+    @property
+    def phone(self):
+        return self.__phone
 
-	def get_name(self):
-		"""@ReturnType string"""
-		pass
+    @phone.setter
+    def phone(self, value):
+        self.__phone = value
 
-	def set_name(self, aName):
-		"""@ParamType aName string
-		@ReturnType void"""
-		pass
+    @phone.deleter
+    def phone(self):
+        del self.__phone
 
-	def __init__(self):
-		self.__phone = None
-		"""@AttributeType string"""
-		self.__name = None
-		"""@AttributeType string"""
+    @property
+    def name(self):
+        return self.__name
 
+    @name.setter
+    def name(self, value):
+        self.__name = value
+
+    @name.deleter
+    def name(self):
+        del self.__name

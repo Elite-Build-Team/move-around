@@ -1,37 +1,63 @@
 # -*- coding: UTF-8 -*-
+from typing import List
+
+from model import ReportIssue
+
+
 class User(object):
-	def get_name(self):
-		"""@ReturnType string"""
-		pass
+    def __init__(self):
+        self.name: str = ''
+        self.surname: str = ''
+        self.email: str = ''
+        self.reported_issues: List[ReportIssue] = []
 
-	def set_name(self, aName):
-		"""@ParamType aName string
-		@ReturnType void"""
-		pass
+    @property
+    def name(self):
+        return self.__name
 
-	def get_surname(self):
-		"""@ReturnType string"""
-		pass
+    @name.setter
+    def name(self, value):
+        self.__name = value
 
-	def set_surname(self, aSurname):
-		"""@ParamType aSurname string
-		@ReturnType void"""
-		pass
+    @name.deleter
+    def name(self):
+        del self.__name
 
-	def get_email(self):
-		"""@ReturnType string"""
-		pass
+    @property
+    def surname(self):
+        return self.__surname
 
-	def set_email(self, aEmail):
-		"""@ParamType aEmail string
-		@ReturnType void"""
-		pass
+    @surname.setter
+    def surname(self, value):
+        self.__surname = value
 
-	def __init__(self):
-		self.__name = None
-		"""@AttributeType string"""
-		self.__surname = None
-		"""@AttributeType string"""
-		self.__email = None
-		"""@AttributeType string"""
+    @surname.deleter
+    def surname(self):
+        del self.__surname
 
+    @property
+    def email(self):
+        return self.__email
+
+    @email.setter
+    def email(self, value):
+        self.__email = value
+
+    @email.deleter
+    def email(self):
+        del self.__email
+
+    @property
+    def reported_issues(self):
+        return self.__reported_issues
+
+    @reported_issues.setter
+    def reported_issues(self, value):
+        self.__reported_issues = value
+
+    @reported_issues.deleter
+    def reported_issues(self):
+        del self.__reported_issues
+
+    def add_report_issue(self, report_issue):
+        self.reported_issues.append(report_issue)
