@@ -25,6 +25,15 @@
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm, [Diagrams.net](https://app.diagrams.net/)
 
+
+## Changelog
+## v.02
+
+* Robustness 4: Το όνομα "Reported Issue" μετατράπηκε σε "Issue" για να ταιριάζουν τα ονόματα στο σύνολο του project.
+* Robustness 5: Προστέθηκε βέλος εναλλακτικής ροής από την "Οθόνη Δημιουργίας Υποδομής" προς την επιστροφή.
+
+
+
 \newpage
 
 ### 1. Βασική Ροή "Αναφορά προβλήματος"
