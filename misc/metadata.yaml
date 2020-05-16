@@ -1,3 +1,4 @@
 ---
 lang: el-GR
+header-includes: \usepackage{xcolor}
 ---
