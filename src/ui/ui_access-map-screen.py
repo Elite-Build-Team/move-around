@@ -1,79 +1,43 @@
 # -*- coding: utf-8 -*-
 
-################################################################################
-## Form generated from reading UI file 'access-map-screenOuygyZ.ui'
-##
-## Created by: Qt User Interface Compiler version 5.14.2
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
+import sys
+import random
+from PySide2 import QtWidgets
 
-from PySide2.QtCore import (QCoreApplication, QDate, QDateTime, QMetaObject,
-    QObject, QPoint, QRect, QSize, QTime, QUrl, Qt)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
-    QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter,
-    QPixmap, QRadialGradient)
-from PySide2.QtWidgets import *
+from PySide2 import QtCore, QtWidgets, QtGui
 
+from PySide2.QtWidgets import QApplication
 from PySide2.QtQuickWidgets import QQuickWidget
+from PySide2.QtCore import QUrl
 
+class AccessMapWidget(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
 
+        self.toilets_checkbox = QtWidgets.QCheckBox("Toilets")
+        self.parkings_checkbox = QtWidgets.QCheckBox("Parkings")
+        self.obstacles_checkbox = QtWidgets.QCheckBox("Obstacles")
 
-class Ui_AccessMapScreen(object):
-    def setupUi(self, AccessMapScreen):
-        if not AccessMapScreen.objectName():
-            AccessMapScreen.setObjectName(u"AccessMapScreen")
-        AccessMapScreen.resize(390, 298)
-        self.verticalLayout_2 = QVBoxLayout(AccessMapScreen)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.gridLayout_2 = QGridLayout()
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.horizontalLayout = QHBoxLayout()
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.checkBox_3 = QCheckBox(AccessMapScreen)
-        self.checkBox_3.setObjectName(u"checkBox_3")
+        self.layout = QtWidgets.QVBoxLayout()
 
-        self.horizontalLayout.addWidget(self.checkBox_3)
+        # self.horizontal_layout = QtWidgets.QHBoxLayout()
+        self.quickWidget = QQuickWidget(QUrl('src/ui/access-map.qml'))
+        self.layout.addWidget(self.quickWidget)
+        
+        self.checkbox_layout = QtWidgets.QHBoxLayout()
+        self.checkbox_layout.addWidget(self.toilets_checkbox)
+        self.checkbox_layout.addWidget(self.parkings_checkbox)
+        self.checkbox_layout.addWidget(self.obstacles_checkbox)
 
-        self.checkBox = QCheckBox(AccessMapScreen)
-        self.checkBox.setObjectName(u"checkBox")
+        self.layout.addLayout(self.checkbox_layout)
+        
+        self.setLayout(self.layout)
 
-        self.horizontalLayout.addWidget(self.checkBox)
+if __name__ == "__main__":
+    app = QtWidgets.QApplication([])
 
-        self.checkBox_2 = QCheckBox(AccessMapScreen)
-        self.checkBox_2.setObjectName(u"checkBox_2")
+    widget = AccessMapWidget()
+    widget.resize(400, 300)
+    widget.show()
 
-        self.horizontalLayout.addWidget(self.checkBox_2)
-
-
-        self.gridLayout_2.addLayout(self.horizontalLayout, 2, 0, 1, 1)
-
-        self.widget = QWidget(AccessMapScreen)
-        self.widget.setObjectName(u"widget")
-        self.horizontalLayout_2 = QHBoxLayout(self.widget)
-        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.quickWidget = QQuickWidget(self.widget)
-        self.quickWidget.setObjectName(u"quickWidget")
-        self.quickWidget.setResizeMode(QQuickWidget.SizeRootObjectToView)
-
-        self.horizontalLayout_2.addWidget(self.quickWidget)
-
-
-        self.gridLayout_2.addWidget(self.widget, 0, 0, 2, 1)
-
-
-        self.verticalLayout_2.addLayout(self.gridLayout_2)
-
-
-        self.retranslateUi(AccessMapScreen)
-
-        QMetaObject.connectSlotsByName(AccessMapScreen)
-    # setupUi
-
-    def retranslateUi(self, AccessMapScreen):
-        AccessMapScreen.setWindowTitle(QCoreApplication.translate("AccessMapScreen", u"Form", None))
-        self.checkBox_3.setText(QCoreApplication.translate("AccessMapScreen", u"Obstacles", None))
-        self.checkBox.setText(QCoreApplication.translate("AccessMapScreen", u"Toilets", None))
-        self.checkBox_2.setText(QCoreApplication.translate("AccessMapScreen", u"Parking", None))
-    # retranslateUi
-
+    sys.exit(app.exec_())

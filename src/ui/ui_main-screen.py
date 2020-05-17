@@ -1,52 +1,30 @@
 # -*- coding: utf-8 -*-
 
-################################################################################
-## Form generated from reading UI file 'main-screenBLQDZS.ui'
-##
-## Created by: Qt User Interface Compiler version 5.14.2
-##
-## WARNING! All changes made in this file will be lost when recompiling UI file!
-################################################################################
+import sys
+import random
+from PySide2 import QtWidgets
 
-from PySide2.QtCore import (QCoreApplication, QDate, QDateTime, QMetaObject,
-    QObject, QPoint, QRect, QSize, QTime, QUrl, Qt)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
-    QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter,
-    QPixmap, QRadialGradient)
-from PySide2.QtWidgets import *
+from PySide2 import QtCore, QtWidgets, QtGui
 
+class MainScreenWidget(QtWidgets.QWidget):
+    def __init__(self):
+        super().__init__()
 
-class Ui_MainScreen(object):
-    def setupUi(self, MainScreen):
-        if not MainScreen.objectName():
-            MainScreen.setObjectName(u"MainScreen")
-        MainScreen.resize(400, 300)
-        self.verticalLayout_2 = QVBoxLayout(MainScreen)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.verticalLayout = QVBoxLayout()
-        self.verticalLayout.setObjectName(u"verticalLayout")
-        self.pushButton_2 = QPushButton(MainScreen)
-        self.pushButton_2.setObjectName(u"pushButton_2")
+        self.welcome_message = QtWidgets.QLabel("Welcome to Move-around!")
+        self.button_report_issue = QtWidgets.QPushButton("Report Issue")
+        self.button_access_map = QtWidgets.QPushButton("Access Map")
 
-        self.verticalLayout.addWidget(self.pushButton_2)
+        self.layout = QtWidgets.QVBoxLayout()
+        self.layout.addWidget(self.welcome_message)
+        self.layout.addWidget(self.button_report_issue)
+        self.layout.addWidget(self.button_access_map)
+        self.setLayout(self.layout)
 
-        self.pushButton = QPushButton(MainScreen)
-        self.pushButton.setObjectName(u"pushButton")
+if __name__ == "__main__":
+    app = QtWidgets.QApplication([])
 
-        self.verticalLayout.addWidget(self.pushButton)
+    widget = MainScreenWidget()
+    widget.resize(400, 300)
+    widget.show()
 
-
-        self.verticalLayout_2.addLayout(self.verticalLayout)
-
-
-        self.retranslateUi(MainScreen)
-
-        QMetaObject.connectSlotsByName(MainScreen)
-    # setupUi
-
-    def retranslateUi(self, MainScreen):
-        MainScreen.setWindowTitle(QCoreApplication.translate("MainScreen", u"Form", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainScreen", u"Access Map", None))
-        self.pushButton.setText(QCoreApplication.translate("MainScreen", u"Report Issue", None))
-    # retranslateUi
-
+    sys.exit(app.exec_())
