@@ -41,6 +41,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ### v0.3
 * Προσθήκη της κλάσης **AFP Suggestions** και της περιγραφής της.
 * Προσθήκη των μεθόδων των κλάσεων.
+* Αλλαγές στην ορθογραφία
 
 \newpage
 
