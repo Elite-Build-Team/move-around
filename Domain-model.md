@@ -40,10 +40,11 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 ### v0.3
 * Προσθήκη της κλάσης **AFP Suggestions** και της περιγραφής της.
+* Προσθήκη των μεθόδων των κλάσεων.
 
 \newpage
 
-![Domain-Model](images/Domain-Model.png)
+![Domain-Model](images/Domain-Model-v0.3.png)
 
 ## Περιγραφή κλάσεων
 * **Access Map (Χάρτης Πρόσβασης)** : Ο χάρτης πρόσβασης που περιλαμβάνει όλα τα σημεία ενδιαφέροντος για ένα Α.Μ.Ε.Α. και ενημερώνεται από τους χρήστες το συστήματος . 
