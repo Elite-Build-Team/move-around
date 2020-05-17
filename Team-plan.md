@@ -81,7 +81,7 @@ To critical path απεικονίζεται στο *PERT Chart* με κόκκι�
 
 Για τα *meetings* χρησιμοποιούμε το *Discord* για άμεση επικοινωνία και το *Viber* κατά περίπτωση.
 
-Για *file sharing* χρησιμοποιούμε το [Github Repository](https://github.com/Elite-Build-Team/software-engineering-2020) του πρότζεκτ αλλά και τα άμεσα μηνύματα.
+Για *file sharing* χρησιμοποιούμε το [Github Repository](https://github.com/Elite-Build-Team/move-around) του πρότζεκτ αλλά και τα άμεσα μηνύματα.
 
 ## More tools
 * Για την ανάπτυξη του κώδικα του έργου θα χρησιμοποιηθεί η ***Python*** με *αντικειμενοστραφή* προσανατολισμό.
