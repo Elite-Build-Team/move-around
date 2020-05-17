@@ -31,26 +31,6 @@ class AFP(object):
 		@ReturnType void"""
 		pass
 
-	def setLocation(self, aLocation):
-		""""""@ParamType aLocation Location"""
-		@ParamType aLocation Location"""
-		self.location = aLocation
-
-	def getLocation(self):
-		""""""@ReturnType Location"""
-		@ReturnType Location"""
-		return self.location
-
-	def setReviews(self, *aReviews):
-		""""""@ParamType aReviews Review*"""
-		@ParamType aReviews Review*"""
-		self.__reviews = aReviews
-
-	def getReviews(self):
-		""""""@ReturnType Review*"""
-		@ReturnType Review*"""
-		return self.__reviews
-
 	def __init__(self):
 		self.location = None
 		"""@AttributeType Location"""
