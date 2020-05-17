@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main-screeniyKNOS.ui'
+## Form generated from reading UI file 'main-screenBLQDZS.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.2
 ##
@@ -20,7 +20,7 @@ class Ui_MainScreen(object):
     def setupUi(self, MainScreen):
         if not MainScreen.objectName():
             MainScreen.setObjectName(u"MainScreen")
-        MainScreen.resize(400, 296)
+        MainScreen.resize(400, 300)
         self.verticalLayout_2 = QVBoxLayout(MainScreen)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.verticalLayout = QVBoxLayout()
@@ -46,7 +46,7 @@ class Ui_MainScreen(object):
 
     def retranslateUi(self, MainScreen):
         MainScreen.setWindowTitle(QCoreApplication.translate("MainScreen", u"Form", None))
-        self.pushButton_2.setText(QCoreApplication.translate("MainScreen", u"\u03a7\u03ac\u03c1\u03c4\u03b7\u03c2 \u03a0\u03c1\u03cc\u03c3\u03b2\u03b1\u03c3\u03b7\u03c2", None))
-        self.pushButton.setText(QCoreApplication.translate("MainScreen", u"\u0391\u03bd\u03b1\u03c6\u03bf\u03c1\u03ac \u03a0\u03c1\u03bf\u03b2\u03bb\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2", None))
+        self.pushButton_2.setText(QCoreApplication.translate("MainScreen", u"Access Map", None))
+        self.pushButton.setText(QCoreApplication.translate("MainScreen", u"Report Issue", None))
     # retranslateUi
 

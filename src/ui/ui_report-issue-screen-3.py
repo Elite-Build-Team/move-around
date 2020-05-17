@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'report-issue-screen-3wupLyD.ui'
+## Form generated from reading UI file 'report-issue-screen-3MnFzPu.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.2
 ##
@@ -51,6 +51,6 @@ class Ui_ReportIssueScreen3(object):
 #endif // QT_CONFIG(tooltip)
         self.plainTextEdit.setPlainText("")
         self.plainTextEdit.setPlaceholderText(QCoreApplication.translate("ReportIssueScreen3", u"\u0395\u03b9\u03c3\u03ac\u03b3\u03b5\u03c4\u03b5 \u03c0\u03b5\u03c1\u03b9\u03b3\u03c1\u03b1\u03c6\u03ae \u03c4\u03b7\u03c2 \u03b2\u03bb\u03ac\u03b2\u03b7\u03c2.", None))
-        self.pushButton.setText(QCoreApplication.translate("ReportIssueScreen3", u"\u03a5\u03c0\u03bf\u03b2\u03bf\u03bb\u03ae \u0392\u03bb\u03ac\u03b2\u03b7\u03c2", None))
+        self.pushButton.setText(QCoreApplication.translate("ReportIssueScreen3", u"Submit Report", None))
     # retranslateUi
 
