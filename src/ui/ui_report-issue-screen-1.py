@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'report-issue-screen-1WVoZAP.ui'
+## Form generated from reading UI file 'report-issue-screen-1NhJCvb.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.14.2
 ##
@@ -15,6 +15,9 @@ from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont,
     QPixmap, QRadialGradient)
 from PySide2.QtWidgets import *
 
+from PySide2.QtQuickWidgets import QQuickWidget
+
+
 
 class Ui_ReportIssueScreen1(object):
     def setupUi(self, ReportIssueScreen1):
@@ -27,6 +30,14 @@ class Ui_ReportIssueScreen1(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.widget = QWidget(ReportIssueScreen1)
         self.widget.setObjectName(u"widget")
+        self.verticalLayout_3 = QVBoxLayout(self.widget)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.quickWidget = QQuickWidget(self.widget)
+        self.quickWidget.setObjectName(u"quickWidget")
+        self.quickWidget.setResizeMode(QQuickWidget.SizeRootObjectToView)
+
+        self.verticalLayout_3.addWidget(self.quickWidget)
+
 
         self.verticalLayout.addWidget(self.widget)
 
@@ -46,6 +57,6 @@ class Ui_ReportIssueScreen1(object):
 
     def retranslateUi(self, ReportIssueScreen1):
         ReportIssueScreen1.setWindowTitle(QCoreApplication.translate("ReportIssueScreen1", u"Form", None))
-        self.pushButton.setText(QCoreApplication.translate("ReportIssueScreen1", u"\u0395\u03c0\u03b9\u03bb\u03bf\u03b3\u03ae \u03a4\u03bf\u03c0\u03bf\u03b8\u03b5\u03c3\u03af\u03b1\u03c2", None))
+        self.pushButton.setText(QCoreApplication.translate("ReportIssueScreen1", u"Choose Location", None))
     # retranslateUi
 

@@ -21,33 +21,50 @@
        <item>
         <widget class="QCheckBox" name="checkBox_3">
          <property name="text">
-          <string>Εμπόδια</string>
+          <string>Obstacles</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox">
          <property name="text">
-          <string>Τουαλέτες</string>
+          <string>Toilets</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="checkBox_2">
          <property name="text">
-          <string>Πάρκινγκ</string>
+          <string>Parking</string>
          </property>
         </widget>
        </item>
       </layout>
      </item>
      <item row="0" column="0" rowspan="2">
-      <widget class="QWidget" name="widget" native="true"/>
+      <widget class="QWidget" name="widget" native="true">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QQuickWidget" name="quickWidget">
+          <property name="resizeMode">
+           <enum>QQuickWidget::SizeRootObjectToView</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
      </item>
     </layout>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QQuickWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">QtQuickWidgets/QQuickWidget</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
