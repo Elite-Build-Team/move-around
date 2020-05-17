@@ -25,10 +25,12 @@
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm, [Diagrams.net](https://app.diagrams.net/)
 
+\newpage
 
 ## Changelog
 ## v.02
-Οι σημαντικές αλλαγές από το v0.2 στο v0.3 έχουν υπογραμμιστεί με textcolor{blue}{μπλέ} χρώμα.
+Οι σημαντικές αλλαγές από το v0.2 στο v0.3 έχουν υπογραμμιστεί με \textcolor{blue}{μπλέ} χρώμα.
+
 * Robustness 2: Εμπλουτισμός του βήματος 8 ώστε να προσθέτει την αναφορά προβλήματος στη λίστα με τις Βλάβες υπό Επισκευή του Δήμου καθώς και στην Αναφορές του χρήστη.
 * Robustness 4: Το όνομα "Reported Issue" μετατράπηκε σε "Issue" για να ταιριάζουν τα ονόματα στο σύνολο του project.
 * Robustness 5: Προστέθηκε βέλος εναλλακτικής ροής από την "Οθόνη Δημιουργίας Υποδομής" προς την επιστροφή.
