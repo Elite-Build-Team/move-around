@@ -22,7 +22,7 @@
      <item row="1" column="0">
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>Επιλογή Φωτογραφίας</string>
+        <string>Choose Photograph</string>
        </property>
       </widget>
      </item>

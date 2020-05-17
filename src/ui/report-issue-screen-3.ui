@@ -32,7 +32,7 @@
      <item>
       <widget class="QPushButton" name="pushButton">
        <property name="text">
-        <string>Υποβολή Βλάβης</string>
+        <string>Submit Report</string>
        </property>
       </widget>
      </item>
