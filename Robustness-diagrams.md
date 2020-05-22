@@ -37,6 +37,12 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 * Robustness 7: Προστέθηκε entity και control object, "Προγραμματισμένη Επίσκεψη" και "Δημιούργησε" αντίστοιχα.
 * Robustness 10: Αλλαγή ονόματος του entity “Κατάλογος Κρατήσεων” σε “Κρατήσεις taxi”. Προσθήκη του entity “Κράτηση taxi” όπου θα αποθηκεύονται οι πληροφορίες μιας κράτησης. Προσθήκη του ελεγκτή “πρόσθεσε” ώστε να ενώνει τα δύο boundaries “Οθόνη εισαγωγής στοιχείων” και “Οθόνη εισαγωγής τοποθεσίας”.
 
+
+## Changelog
+## v.03
+
+* Robustness 3: Με βάση την αλλαγή στη λεκτική περιγραφή του use case προστέθηκε νέο control object "Επέλεξε" μεταξύ Pending Issues και ReportIssue 
+* Robustness 5:
 \newpage
 
 ### 1. Βασική Ροή "Αναφορά προβλήματος"
