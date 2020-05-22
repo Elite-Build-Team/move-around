@@ -25,6 +25,15 @@
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm, [Diagrams.net](https://app.diagrams.net/)
 
+## Changelog
+## v0.2
+
+* Sequence 3: Προστέθηκαν οι μέθοδοι ανάκτησης/επιστροφής των δεδομένων αντικειμένου ReportIssue (get_issue_details() και return_issue_details()). Επίσης προστέθηκαν οι μέθοδοι choose_issue() και return_issue() προς και από τις Pending Issues. Επίσης αφαιρέθηκε το return() από τις μεθόδους update_map(), delete_pending_issue(), set_under_construction() και set_pending_issue() καθώς κρίθηκε περιττό.
+* Sequence 4: Προστέθηκαν οι μέθοδοι ανάκτησης/επιστροφής των δεδομένων αντικειμένου ReportIssue (get_issue_details() και return_issue_details()). Επίσης προστέθηκαν οι μέθοδοι choose_issue() και return_issue() προς και από τις Under Construction Issues. Επίσης αφαιρέθηκε το return() από τις μεθόδους update_map() και delete_under_construction() καθώς κρίθηκε περιττό.
+* Sequence 5: 
+
+
+
 \newpage
 
 ### 1. Βασική Ροή "Αναφορά προβλήματος"
