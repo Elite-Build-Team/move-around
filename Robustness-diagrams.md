@@ -42,7 +42,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ## v.03
 
 * Robustness 3: Με βάση την αλλαγή στη λεκτική περιγραφή του use case προστέθηκε νέο control object "Επέλεξε" μεταξύ Pending Issues και ReportIssue 
-* Robustness 5:
+* Robustness 4: Με βάση την αλλαγή στη λεκτική περιγραφή του use case προστέθηκε νέο control object "Επέλεξε" μεταξύ Under Construction Issues και ReportIssue.
+* Robustness 5: 
+
 \newpage
 
 ### 1. Βασική Ροή "Αναφορά προβλήματος"
@@ -111,7 +113,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 3. Ο υπάλληλος του Δήμου επιλέγει "Βλάβες υπό Επισκευή".
 4. Το σύστημα ανακτά όλες τις αναφορές που έχουν κάνει οι χρήστες από τις Under Construction Issues και εμφανίζει την οθόνη "Βλάβες Υπό Επισκευή".
 4. Ο υπάλληλος του Δήμου επιλέγει μία εκ των αναφορών πατώντας την "Εξέταση Αναφοράς".
-5. Το σύστημα εμφανίζει στην οθόνη τα στοιχεία της αναφοράς αυτής.
+5. Το σύστημα \textcolor{blue}{επιλέγει την συγκεκριμένη αναφορά από τις Under Construction Issues, ανακτά τα δεδομένα της ReportIssue και τα εμφανίζει την οθόνη στοιχείων αναφοράς}.
 6. Ο υπάλληλος του Δήμου επιλέγει "Επιλύθηκε".
 7. Το σύστημα αφαιρεί την αναφορά από τις Under Construction Issues, ενημερώνει το Χάρτη Πρόσβασης και επιστρέφει τον υπάλληλο του Δήμου στην κύρια οθόνη.
 
