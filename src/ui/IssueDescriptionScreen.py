@@ -7,7 +7,7 @@ from PySide2 import QtWidgets
 from PySide2 import QtCore, QtWidgets, QtGui
 
 
-class ReportIssueScreen3Widget(QtWidgets.QWidget):
+class IssueDescriptionScreen(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 

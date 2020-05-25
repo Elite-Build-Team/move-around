@@ -11,7 +11,7 @@ from PySide2.QtQuickWidgets import QQuickWidget
 from PySide2.QtCore import QUrl
 
 
-class AccessMapWidget(QtWidgets.QWidget):
+class AccessMapScreen(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 

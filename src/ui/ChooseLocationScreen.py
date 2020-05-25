@@ -11,7 +11,7 @@ from PySide2.QtQuickWidgets import QQuickWidget
 from PySide2.QtCore import QUrl
 
 
-class ReportIssueScreen1Widget(QtWidgets.QWidget):
+class ChooseLocationScreen(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
 
