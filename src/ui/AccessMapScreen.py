@@ -10,6 +10,7 @@ from PySide2.QtWidgets import QApplication
 from PySide2.QtQuickWidgets import QQuickWidget
 from PySide2.QtCore import QUrl
 
+
 class AccessMapWidget(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
@@ -23,21 +24,13 @@ class AccessMapWidget(QtWidgets.QWidget):
         # self.horizontal_layout = QtWidgets.QHBoxLayout()
         self.quickWidget = QQuickWidget(QUrl('src/ui/access-map.qml'))
         self.layout.addWidget(self.quickWidget)
-        
+
         self.checkbox_layout = QtWidgets.QHBoxLayout()
         self.checkbox_layout.addWidget(self.toilets_checkbox)
         self.checkbox_layout.addWidget(self.parkings_checkbox)
         self.checkbox_layout.addWidget(self.obstacles_checkbox)
 
         self.layout.addLayout(self.checkbox_layout)
-        
+
         self.setLayout(self.layout)
-
-if __name__ == "__main__":
-    app = QtWidgets.QApplication([])
-
-    widget = AccessMapWidget()
-    widget.resize(400, 300)
-    widget.show()
-
-    sys.exit(app.exec_())
+        self.resize(400, 300)

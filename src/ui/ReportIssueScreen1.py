@@ -10,6 +10,7 @@ from PySide2.QtWidgets import QApplication
 from PySide2.QtQuickWidgets import QQuickWidget
 from PySide2.QtCore import QUrl
 
+
 class ReportIssueScreen1Widget(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
@@ -24,12 +25,4 @@ class ReportIssueScreen1Widget(QtWidgets.QWidget):
         self.layout.addWidget(self.quickWidget)
         self.layout.addWidget(self.button_choose_location)
         self.setLayout(self.layout)
-
-if __name__ == "__main__":
-    app = QtWidgets.QApplication([])
-
-    widget = ReportIssueScreen1Widget()
-    widget.resize(400, 300)
-    widget.show()
-
-    sys.exit(app.exec_())
+        self.resize(400, 300)
