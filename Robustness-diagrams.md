@@ -44,7 +44,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 * Robustness 3: Με βάση την αλλαγή στη λεκτική περιγραφή του use case προστέθηκε νέο control object "Επέλεξε" μεταξύ Pending Issues και ReportIssue 
 * Robustness 4: Με βάση την αλλαγή στη λεκτική περιγραφή του use case προστέθηκε νέο control object "Επέλεξε" μεταξύ Under Construction Issues και ReportIssue.
 * Robustness 5: Στο διάγραμμα προστέθηκε η οθόνη συμπλήρωσης στοιχείων και τα μηνύματα προειδοποίησης των εναλλακτικών ροών καθώς και τα κατάλληλα control objects μετάβασης μεταξύ αυτών.
-
+* Robustness 6: Με βάση την αλλαγή στη λεκτική περιγραφή του use case, μετονομάστηκαν δύο control objects από "εμφάνισε" σε "ανάκτησε".
 \newpage
 
 ### 1. Βασική Ροή "Αναφορά προβλήματος"
