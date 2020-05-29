@@ -40,10 +40,10 @@ class AMEA(User):
 	def add_to_taxi_bookings(self, taxi_booking : TaxiBooking):
 		self.__taxi_bookings.append(taxi_booking)
 	
-	def get_taxi_bookings(self) -> List[TaxiBooking]
+	def get_taxi_bookings(self) -> List[TaxiBooking]:
 		return self.__taxi_bookings
 
-	def set_taxi_bookings(self, taxi_bookings : List[TaxiBooking])
+	def set_taxi_bookings(self, taxi_bookings : List[TaxiBooking]):
 		self.__taxi_bookings = taxi_bookings
 
 	def get_created_afp(self) -> List[AFP]:

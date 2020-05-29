@@ -1,7 +1,10 @@
 # -*- coding: UTF-8 -*-
-from Model import ScheduledMeeting
-from Model import ReportIssue
-from Model import User
+from model import ScheduledMeeting
+from model import ReportIssue
+from model import User
+
+from typing import List
+
 
 class PublicServiceWorker(User):
 	def get_meetings(self) -> List[ScheduledMeeting]:

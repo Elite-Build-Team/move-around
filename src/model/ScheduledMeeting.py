@@ -2,6 +2,7 @@
 
 from enum import Enum
 import datetime
+from typing import Tuple
 
 
 class ScheduledMeetingStatus(Enum):
@@ -35,13 +36,14 @@ class ScheduledMeeting(object):
     def set_amea_name(self, amea_name: str):
         self.__amea_name = amea_name
 
-    def get_meeting_details(self):
-        # TODO
-        pass
+    def get_meeting_details(self) -> Tuple[datetime, str, ScheduledMeetingStatus, str]:
+        return self.__date_time, self.__public_service_name, self.__status, self.__amea_name
 
-    def update_meeting_details(self):
-        # TODO
-        pass
+    def update_meeting_details(self, date_time: datetime, public_service_name: str, status: ScheduledMeetingStatus, amea_name: str):
+        self.__date_time = date_time
+        self.__public_service_name = public_service_name
+        self.__status = status
+        self.__amea_name = amea_name
 
     def __init__(self):
         self.__date_time: datetime = None

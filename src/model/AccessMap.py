@@ -1,6 +1,11 @@
 # -*- coding: UTF-8 -*-
+from enum import Enum
+
 from model import Location
 from typing import List
+
+from model.Location import LocationType
+
 
 class AccessMap(object):
 	def get_locations(self) -> List[Location]:
@@ -22,7 +27,7 @@ class AccessMap(object):
 		self.__locations.append(location)
 
 	def delete_location(self, location : Location):
-		self.__locations.delete(location)
+		self.__locations.remove(location)
 
 	def get_access_map(self) -> List[Location]:
 		return self.__locations

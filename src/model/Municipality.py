@@ -1,8 +1,11 @@
 # -*- coding: UTF-8 -*-
+from typing import List
+
 from model import IssuesUnderConstruction
 from model import User
 from model import PendingIssues
 from model import ServiceInfo
+
 
 class Municipality(User):
 	def get_pending_issues(self) -> PendingIssues:
@@ -26,5 +29,5 @@ class Municipality(User):
 	def __init__(self):
 		self.__pending_issues: PendingIssues = None
 		self.__under_construction: IssuesUnderConstruction = None
-		self.__service_catalog: List[ServiceInfo] = None
+		self.__service_catalog: List[ServiceInfo] = []
 

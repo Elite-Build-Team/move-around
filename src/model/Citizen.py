@@ -2,6 +2,9 @@
 from model import ReportIssue
 from model import User
 
+from typing import List
+
+
 class Citizen(User):
 	def get_reported_issues(self) -> List[ReportIssue]:
 		return self.__reported_issues
@@ -16,4 +19,4 @@ class Citizen(User):
 		self.__reported_issues.remove(report_issue)
 
 	def __init__(self):
-		self.__reported_issues: List[ReportIssue] = None
+		self.__reported_issues: List[ReportIssue] = []

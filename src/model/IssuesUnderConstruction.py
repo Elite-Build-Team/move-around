@@ -1,6 +1,9 @@
 # -*- coding: UTF-8 -*-
-from Model import ServiceInfo
-from Model import ReportIssue
+from model import ServiceInfo
+from model import ReportIssue
+
+from typing import List
+
 
 class IssuesUnderConstruction(object):
 	def get_service_info(self) -> ServiceInfo:
