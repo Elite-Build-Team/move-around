@@ -1,94 +1,58 @@
 # -*- coding: UTF-8 -*-
-from Model import Location
-from Model import AFP
-from Model import ReportIssue
-from Model import TaxiBooking
-from Model import User
+from model import Location
+from model import AFP
+from model import ReportIssue
+from model import TaxiBooking
+from model import User
+from typing import List
 
 class AMEA(User):
 	def get_current_location(self):
-		"""@ReturnType Model.Location"""
-		pass
+		return self.__current_location
 
-	def set_current_location(self, current_location):
-		"""@ParamType current_location Model.Location
-		@ReturnType void"""
-		pass
+	def set_current_location(self, current_location : Location):
+		self.__current_location = current_location
 
 	def get_liked_afp(self):
-		"""@ReturnType Model.AFP*"""
-		pass
+		return self.__liked_afp
 
-	def set_liked_afp(self, *liked_afp):
-		"""@ParamType liked_afp AFP*
-		@ReturnType void"""
-		pass
+	def set_liked_afp(self, liked_afp : List[AFP]):
+		self.__liked_afp = liked_afp
 
 	def get_reported_issues(self):
-		"""@ReturnType Model.ReportIssue*"""
-		pass
+		return self.__reported_issues
 
-	def set_reported_issues(self, *reported_issues):
-		"""@ParamType reported_issues Model.ReportIssue*
-		@ReturnType void"""
-		pass
+	def set_reported_issues(self, reported_issues : List[ReportIssue]):
+		self.__reported_issues = reported_issues
 
-	def add_report_issue(self, report_issue):
-		"""@ParamType report_issue Model.ReportIssue
-		@ReturnType void"""
-		pass
+	def add_report_issue(self, report_issue : ReportIssue):
+		self.__reported_issues.append(report_issue)
 
-	def delete_report_issue(self, report_issue):
-		"""@ParamType report_issue Model.ReportIssue
-		@ReturnType void"""
-		pass
+	def delete_report_issue(self, report_issue : ReportIssue):
+		self.__reported_issues.delete(report_issue)
 
-	def add_liked_afp(self, afp):
-		"""@ParamType afp Model.AFP
-		@ReturnType void"""
-		pass
+	def add_liked_afp(self, afp : AFP):
+		self.__liked_afp.append(afp)
 
 	def delete_liked_afp(self, afp):
-		"""@ParamType afp Model.AFP
-		@ReturnType void"""
-		pass
+		self.__liked_afp.delete(afp)
 
-	def add_to_taxi_bookings(self, taxi_booking):
-		"""@ParamType taxi_booking Model.TaxiBooking"""
-		pass
+	def add_to_taxi_bookings(self, taxi_booking : TaxiBooking):
+		self.__taxi_bookings.append(taxi_booking)
 
 	def get_created_afp(self):
-		"""@ReturnType Model.AFP*"""
-		pass
+		return self.__created_afp
 
-	def set_created_afp(self, *created_afp):
-		"""@ParamType created_afp Model.AFP*
-		@ReturnType void"""
-		pass
-
-	def delete_created_afp(self, AFP):
-		"""@ReturnType void"""
-		pass
-
-	def set_created_afp(self, *created_afp):
-		""""""@ParamType created_afp Model.AFP*"""
-		@ParamType created_afp Model.AFP*"""
+	def set_created_afp(self, created_afp : AFP):
 		self.__created_afp = created_afp
 
-	def get_created_afp(self):
-		""""""@ReturnType Model.AFP*"""
-		@ReturnType Model.AFP*"""
-		return self.__created_afp
+	def delete_created_afp(self, afp : AFP):
+		self.__created_afp.delete(afp)
 
 	def __init__(self):
 		self.__current_location = None
-		"""@AttributeType Model.Location"""
 		self.__liked_afp = None
-		"""@AttributeType Model.AFP*"""
 		self.__reported_issues = None
-		"""@AttributeType Model.ReportIssue*"""
 		self.__taxi_bookings = None
-		"""@AttributeType Model.TaxiBooking*"""
 		self.__created_afp = None
-		"""@AttributeType Model.AFP*"""
 

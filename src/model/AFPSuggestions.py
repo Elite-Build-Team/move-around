@@ -1,30 +1,20 @@
 # -*- coding: UTF-8 -*-
 import AFP
+from typing import List
 
 class AFPSuggestions(object):
 	def get_afp_suggestions(self):
-		"""@ReturnType Suggestions*"""
-		pass
+		return self.__afp_suggestions
 
-	def set_afp_suggestions(self, *aAfp_suggestions):
-		"""@ParamType aAfp_suggestions Suggestions*
-		@ReturnType void"""
-		pass
+	def set_afp_suggestions(self, afp_suggestions : List[AFP]):
+		self.__afp_suggestions = afp_suggestions
 
-	def add_suggestion(self, aAfp):
-		"""@ParamType aAfp AFP
-		@ReturnType void"""
-		pass
+	def add_suggestion(self, suggestion : AFP):
+		self.__afp_suggestions.append(suggestion)
 
-	def delete_suggestion(self, aAfp):
-		"""@ParamType aAfp AFP
-		@ReturnType void"""
-		pass
+	def delete_suggestion(self, suggestion : AFP):
+		self.__afp_suggestions.delete(suggestion)
 
 	def __init__(self):
-		self.__afp_suggestions = None
-		"""@AttributeType AFP*"""
+		self.__afp_suggestions = List[AFP] = []
 		self._ = None
-		"""@AttributeType AFP
-		# @AssociationType AFP"""
-
