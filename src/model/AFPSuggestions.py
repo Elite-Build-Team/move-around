@@ -3,7 +3,7 @@ import AFP
 from typing import List
 
 class AFPSuggestions(object):
-	def get_afp_suggestions(self):
+	def get_afp_suggestions(self) -> List[AFP]:
 		return self.__afp_suggestions
 
 	def set_afp_suggestions(self, afp_suggestions : List[AFP]):

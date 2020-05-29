@@ -7,19 +7,19 @@ from model import User
 from typing import List
 
 class AMEA(User):
-	def get_current_location(self):
+	def get_current_location(self) -> Location:
 		return self.__current_location
 
 	def set_current_location(self, current_location : Location):
 		self.__current_location = current_location
 
-	def get_liked_afp(self):
+	def get_liked_afp(self) -> List[AFP]:
 		return self.__liked_afp
 
 	def set_liked_afp(self, liked_afp : List[AFP]):
 		self.__liked_afp = liked_afp
 
-	def get_reported_issues(self):
+	def get_reported_issues(self) -> List[ReportIssue]:
 		return self.__reported_issues
 
 	def set_reported_issues(self, reported_issues : List[ReportIssue]):
@@ -39,8 +39,14 @@ class AMEA(User):
 
 	def add_to_taxi_bookings(self, taxi_booking : TaxiBooking):
 		self.__taxi_bookings.append(taxi_booking)
+	
+	def get_taxi_bookings(self) -> List[TaxiBooking]
+		return self.__taxi_bookings
 
-	def get_created_afp(self):
+	def set_taxi_bookings(self, taxi_bookings : List[TaxiBooking])
+		self.__taxi_bookings = taxi_bookings
+
+	def get_created_afp(self) -> List[AFP]:
 		return self.__created_afp
 
 	def set_created_afp(self, created_afp : AFP):

@@ -16,10 +16,10 @@ class IssuesUnderConstruction(object):
 		self.__report_issues = report_issues
 
 	def add_issue_under_construction(self, issue_under_consturction: ReportIssue):
-		self.__issue_under_construction.append(issue_under_consturction)
+		self.__report_issues.append(issue_under_consturction)
 
 	def delete_issue_under_construction(self, issue_under_construction: ReportIssue):
-		self.__issue_under_construction.remove(issue_under_construction)
+		self.__report_issues.remove(issue_under_construction)
 
 	def __init__(self):
 		self.__service_info = None

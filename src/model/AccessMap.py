@@ -3,19 +3,19 @@ from model import Location
 from typing import List
 
 class AccessMap(object):
-	def get_locations(self):
+	def get_locations(self) -> List[Location]:
 		return self.__locations
 
 	def set_locations(self, locations : List[Location]):
 		self.__locations = locations
 
-	def get_obstacles(self):
+	def get_obstacles(self) -> List[Location]:
 		return [location for location in self.__locations if location.type == LocationType.Obstacle] 
 
-	def get_toilets(self):
+	def get_toilets(self) -> List[Location]:
 		return [location for location in self.__locations if location.type == LocationType.Toilet]
 
-	def get_parkings(self):
+	def get_parkings(self) -> List[Location]:
 		return [location for location in self.__locations if location.type == LocationType.Parking]
 
 	def add_location(self, location : Location):
@@ -24,7 +24,7 @@ class AccessMap(object):
 	def delete_location(self, location : Location):
 		self.__locations.delete(location)
 
-	def get_access_map(self):
+	def get_access_map(self) -> List[Location]:
 		return self.__locations
 
 	def __init__(self):
