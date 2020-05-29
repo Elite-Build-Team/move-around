@@ -4,8 +4,8 @@ class Review(object):
 		"""@ReturnType string"""
 		pass
 
-	def set_description(self, aDescription):
-		"""@ParamType aDescription string
+	def set_description(self, description):
+		"""@ParamType description string
 		@ReturnType void"""
 		pass
 
@@ -13,14 +13,18 @@ class Review(object):
 		"""@ReturnType int"""
 		pass
 
-	def set_stars(self, aStars):
-		"""@ParamType aStars int
+	def set_stars(self, stars):
+		"""@ParamType stars int
 		@ReturnType void"""
 		pass
 
+	def update_review_details(self, string, int):
+		"""@ReturnType void"""
+		pass
+
 	def __init__(self):
-		self.description = None
+		self.__description = None
 		"""@AttributeType string"""
-		self.stars = None
+		self.__stars = None
 		"""@AttributeType int"""
 

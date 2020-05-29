@@ -4,8 +4,8 @@ class User(object):
 		"""@ReturnType string"""
 		pass
 
-	def set_name(self, aName):
-		"""@ParamType aName string
+	def set_name(self, name):
+		"""@ParamType name string
 		@ReturnType void"""
 		pass
 
@@ -13,8 +13,8 @@ class User(object):
 		"""@ReturnType string"""
 		pass
 
-	def set_surname(self, aSurname):
-		"""@ParamType aSurname string
+	def set_surname(self, surname):
+		"""@ParamType surname string
 		@ReturnType void"""
 		pass
 
@@ -22,8 +22,8 @@ class User(object):
 		"""@ReturnType string"""
 		pass
 
-	def set_email(self, aEmail):
-		"""@ParamType aEmail string
+	def set_email(self, email):
+		"""@ParamType email string
 		@ReturnType void"""
 		pass
 

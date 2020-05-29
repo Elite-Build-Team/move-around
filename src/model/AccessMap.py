@@ -1,13 +1,13 @@
 # -*- coding: UTF-8 -*-
-import Location
+from Model import Location
 
 class AccessMap(object):
 	def get_location(self):
-		"""@ReturnType Location*"""
+		"""@ReturnType Model.Location*"""
 		pass
 
-	def set_location(self, *aLocation):
-		"""@ParamType aLocation Location*
+	def set_location(self, *location):
+		"""@ParamType location Model.Location*
 		@ReturnType void"""
 		pass
 
@@ -23,17 +23,21 @@ class AccessMap(object):
 		"""@ReturnType Parking*"""
 		pass
 
-	def add_location(self, aLocation):
-		"""@ParamType aLocation Location
+	def add_location(self, location):
+		"""@ParamType location Model.Location
 		@ReturnType void"""
 		pass
 
-	def delete_location(self, aLocation):
-		"""@ParamType aLocation Location
+	def delete_location(self, location):
+		"""@ParamType location Model.Location
 		@ReturnType void"""
+		pass
+
+	def get_access_map(self):
+		"""@ReturnType Model.Location*"""
 		pass
 
 	def __init__(self):
 		self.__location = None
-		"""@AttributeType Location*"""
+		"""@AttributeType Model.Location*"""
 

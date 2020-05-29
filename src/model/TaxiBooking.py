@@ -1,51 +1,50 @@
 # -*- coding: UTF-8 -*-
-import AMEA
-import Location
+from Model import AMEA
+from Model import Location
 
 class TaxiBooking(object):
-	def get_date(self):
-		"""@ReturnType Date"""
-		pass
-
-	def set_date(self, aDate):
-		"""@ParamType aDate Date
-		@ReturnType void"""
-		pass
-
-	def get_time(self):
-		"""@ReturnType Time"""
-		pass
-
-	def set_time(self, aTime):
-		"""@ParamType aTime Time
-		@ReturnType void"""
-		pass
-
 	def get_amea(self):
-		"""@ReturnType AMEA"""
+		"""@ReturnType Model.AMEA"""
 		pass
 
-	def set_amea(self, aAmea):
-		"""@ParamType aAmea AMEA
+	def set_amea(self, amea):
+		"""@ParamType amea Model.AMEA
 		@ReturnType void"""
 		pass
 
 	def get_location(self):
-		"""@ReturnType Location"""
+		"""@ReturnType Model.Location"""
 		pass
 
-	def set_location(self, aLocation):
-		"""@ParamType aLocation Location
+	def set_location(self, location):
+		"""@ParamType location Model.Location
 		@ReturnType void"""
 		pass
 
+	def get_date_time(self):
+		"""@ReturnType datetime"""
+		pass
+
+	def set_date_time(self, date_time):
+		"""@ParamType date_time datetime
+		@ReturnType void"""
+		pass
+
+	def set_date_time(self, date_time):
+		""""""@ParamType date_time datetime"""
+		@ParamType date_time datetime"""
+		self.__date_time = date_time
+
+	def get_date_time(self):
+		""""""@ReturnType datetime"""
+		@ReturnType datetime"""
+		return self.__date_time
+
 	def __init__(self):
-		self.__date = None
-		"""@AttributeType Date"""
-		self.__time = None
-		"""@AttributeType Time"""
+		self.__date_time = None
+		"""@AttributeType datetime"""
 		self.__amea = None
-		"""@AttributeType AMEA"""
+		"""@AttributeType Model.AMEA"""
 		self.__location = None
-		"""@AttributeType Location"""
+		"""@AttributeType Model.Location"""
 

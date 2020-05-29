@@ -4,8 +4,8 @@ class ServiceInfo(object):
 		"""@ReturnType string"""
 		pass
 
-	def set_phone(self, aPhone):
-		"""@ParamType aPhone string
+	def set_phone(self, phone):
+		"""@ParamType phone string
 		@ReturnType void"""
 		pass
 
@@ -13,8 +13,8 @@ class ServiceInfo(object):
 		"""@ReturnType string"""
 		pass
 
-	def set_name(self, aName):
-		"""@ParamType aName string
+	def set_name(self, name):
+		"""@ParamType name string
 		@ReturnType void"""
 		pass
 
