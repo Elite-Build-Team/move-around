@@ -1,28 +1,19 @@
 # -*- coding: UTF-8 -*-
-from Model import ReportIssue
-from Model import User
+from model import ReportIssue
+from model import User
 
 class Citizen(User):
-	def get_reported_issues(self):
-		"""@ReturnType Model.ReportIssue*"""
-		pass
+	def get_reported_issues(self) -> List[ReportIssue]:
+		return self.__reported_issues
 
-	def set_reported_issues(self, *reported_issues):
-		"""@ParamType reported_issues ReportIssue*
-		@ReturnType void"""
-		pass
+	def set_reported_issues(self, reported_issues: List[ReportIssue]):
+		self.__reported_issues = reported_issues
 
-	def add_report_issue(self, report_issue):
-		"""@ParamType report_issue Model.ReportIssue
-		@ReturnType void"""
-		pass
+	def add_report_issue(self, report_issue: ReportIssue):
+		self.__reported_issues.append(report_issue)
 
-	def delete_report_issue(self, report_issue):
-		"""@ParamType report_issue Model.ReportIssue
-		@ReturnType void"""
-		pass
+	def delete_report_issue(self, report_issue: ReportIssue):
+		self.__reported_issues.remove(report_issue)
 
 	def __init__(self):
-		self.__reported_issues = None
-		"""@AttributeType Model.ReportIssue*"""
-
+		self.__reported_issues: List[ReportIssue] = None
