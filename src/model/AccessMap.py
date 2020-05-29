@@ -1,43 +1,31 @@
 # -*- coding: UTF-8 -*-
-from Model import Location
+from model import Location
+from typing import List
 
 class AccessMap(object):
-	def get_location(self):
-		"""@ReturnType Model.Location*"""
-		pass
+	def get_locations(self):
+		return self.__locations
 
-	def set_location(self, *location):
-		"""@ParamType location Model.Location*
-		@ReturnType void"""
-		pass
+	def set_locations(self, locations : List[Location]):
+		self.__locations = locations
 
 	def get_obstacles(self):
-		"""@ReturnType Obstacle*"""
-		pass
+		return [location for location in self.__locations if location.type == LocationType.Obstacle] 
 
 	def get_toilets(self):
-		"""@ReturnType Toilets*"""
-		pass
+		return [location for location in self.__locations if location.type == LocationType.Toilet]
 
 	def get_parkings(self):
-		"""@ReturnType Parking*"""
-		pass
+		return [location for location in self.__locations if location.type == LocationType.Parking]
 
-	def add_location(self, location):
-		"""@ParamType location Model.Location
-		@ReturnType void"""
-		pass
+	def add_location(self, location : Location):
+		self.__locations.append(location)
 
-	def delete_location(self, location):
-		"""@ParamType location Model.Location
-		@ReturnType void"""
-		pass
+	def delete_location(self, location : Location):
+		self.__locations.delete(location)
 
 	def get_access_map(self):
-		"""@ReturnType Model.Location*"""
-		pass
+		return self.__locations
 
 	def __init__(self):
-		self.__location = None
-		"""@AttributeType Model.Location*"""
-
+		self.__locations = List[Location] = []
