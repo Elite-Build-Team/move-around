@@ -4,8 +4,8 @@ class Location(object):
 		"""@ReturnType (long,lat)"""
 		pass
 
-	def set_coordinates(self, aCoordinates):
-		"""@ParamType aCoordinates (long,lat)
+	def set_coordinates(self, coordinates):
+		"""@ParamType coordinates (long,lat)
 		@ReturnType void"""
 		pass
 
@@ -13,8 +13,8 @@ class Location(object):
 		"""@ReturnType enum(Toilet,Obstacle, Parking, AFP, Public Service)"""
 		pass
 
-	def set_type(self, aType):
-		"""@ParamType aType enum(Toilet,Obstacle, Parking, AFP, Public Service)
+	def set_type(self, type):
+		"""@ParamType type enum(Toilet,Obstacle, Parking, AFP, Public Service)
 		@ReturnType void"""
 		pass
 

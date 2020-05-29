@@ -1,23 +1,23 @@
 # -*- coding: UTF-8 -*-
-import Photograph
-import Location
+from Model import Photograph
+from Model import Location
 
 class ReportIssue(object):
 	def get_photograph(self):
-		"""@ReturnType Photograph"""
+		"""@ReturnType Model.Photograph"""
 		pass
 
-	def set_photograph(self, aPhotograph):
-		"""@ParamType aPhotograph Photograph
+	def set_photograph(self, photograph):
+		"""@ParamType photograph Model.Photograph
 		@ReturnType void"""
 		pass
 
 	def get_location(self):
-		"""@ReturnType Location"""
+		"""@ReturnType Model.Location"""
 		pass
 
-	def set_location(self, aLocation):
-		"""@ParamType aLocation Location
+	def set_location(self, location):
+		"""@ParamType location Model.Location
 		@ReturnType void"""
 		pass
 
@@ -25,8 +25,8 @@ class ReportIssue(object):
 		"""@ReturnType string"""
 		pass
 
-	def set_summary(self, aSummary):
-		"""@ParamType aSummary string
+	def set_summary(self, summary):
+		"""@ParamType summary string
 		@ReturnType void"""
 		pass
 
@@ -34,11 +34,18 @@ class ReportIssue(object):
 		"""@ReturnType bool"""
 		pass
 
+	def get_issue_details(self):
+		"""@ReturnType Photograph, Location, string"""
+		pass
+
+	def update_issue_details(self, photograph, location, string):
+		pass
+
 	def __init__(self):
 		self.__photograph = None
-		"""@AttributeType Photograph"""
+		"""@AttributeType Model.Photograph"""
 		self.__location = None
-		"""@AttributeType Location"""
+		"""@AttributeType Model.Location"""
 		self.__summary = None
 		"""@AttributeType string"""
 
