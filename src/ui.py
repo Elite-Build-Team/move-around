@@ -176,6 +176,7 @@ class ChooseLocationScreen(QtWidgets.QWidget):
 
         qml_path = os.path.join(os.path.dirname(__file__), "qml/choose-location.qml")
         self.quickWidget = QQuickWidget(QUrl.fromLocalFile(qml_path))
+        self.quickWidget.setResizeMode(QtQuickWidgets.QQuickWidget.SizeRootObjectToView)
         self.layout.addWidget(self.quickWidget)
         self.layout.addWidget(self.button_choose_location)
         self.setLayout(self.layout)
@@ -264,7 +265,7 @@ if __name__ == '__main__':
     model: 'DummyModel' = DummyModel()
 
     qapp = QtWidgets.QApplication([])
-
+    qapp.setApplicationName('Move Around')
     app = Application()
     app.resize(400, 300)
     app.show()
