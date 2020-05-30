@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 import sys
 
-from PySide2 import QtCore, QtWidgets, QtGui
 from PySide2.QtCore import QUrl
 from PySide2.QtQuickWidgets import QQuickWidget
 from PySide2.QtWidgets import QFileDialog
+from PySide2 import QtCore, QtWidgets, QtGui
 
 
 class AccessMapScreen(QtWidgets.QWidget):
@@ -98,6 +98,7 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
         self.text_edit_description = QtWidgets.QTextEdit()
         self.button_submit_report = QtWidgets.QPushButton("Submit Report")
         self.button_submit_report.clicked.connect(self.on_submit_clicked)
+        
 
         self.layout = QtWidgets.QVBoxLayout()
         self.layout.addWidget(self.text_edit_description)
@@ -108,7 +109,16 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
     def on_submit_clicked(self):
         ms = MainScreen()
         app.show_screen(ms)
+        if not self.text_edit_description.toPlainText():
+            self.show_popup()
+            app.show_screen(IssueDescriptionScreen())
 
+    def show_popup(self):
+        msg = QtWidgets.QMessageBox()
+        msg.setWindowTitle("Αδυναμία Αποστολής Αναφοράς")
+        msg.setText("Δεν έχει εισαχθεί περιγραφή. Παρακαλώ συμπληρώστε ξανά.")
+        msg.setIcon(QtWidgets.QMessageBox.Warning)
+        msg.exec_()
 
 class MainScreen(QtWidgets.QWidget):
     def __init__(self):
