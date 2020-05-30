@@ -11,6 +11,7 @@ from PySide2.QtWidgets import QFileDialog
 
 from dummy_model import *
 
+
 class AccessMapScreen(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
@@ -87,7 +88,7 @@ class MarkerModel(QtCore.QAbstractListModel):
         # self.beginRemoveRows(QtCore.QModelIndex(), self.rowCount(), self.rowCount())
         # self._markers.remove(marker)
         # self.endRemoveRows()
-        #TODO
+        # TODO
         raise NotImplementedError()
 
 
@@ -107,13 +108,13 @@ class MapWidget(QtQuickWidgets.QQuickWidget):
         for location in self.access_map.get_locations_by_type(location_type):
             coord = QtPositioning.QGeoCoordinate(*location.get_coordinates())
             source = QtCore.QUrl(self.urls[0])
-            #TODO Change icons
+            # TODO Change icons
             self.marker_model.appendMarker({"position": coord, "source": source})
 
     def hide_location_type(self, location_type: LocationType):
         # for location in self.access_map.get_locations_by_type(location_type):
         #     self.marker_model.removeMarker("position": coord, "source": source})
-        #TODO
+        # TODO
         raise NotImplementedError()
 
 
@@ -243,7 +244,6 @@ class Application(QtWidgets.QWidget):
 
 if __name__ == '__main__':
     model: 'DummyModel' = DummyModel()
-    print([l.get_coordinates() for l in model.access_map.get_locations_by_type(LocationType.Toilet)])
 
     qapp = QtWidgets.QApplication([])
 

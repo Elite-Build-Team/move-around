@@ -158,11 +158,12 @@ class AMEA(User):
         self.__created_afp.delete(afp)
 
     def __init__(self):
-        self.__current_location = None
-        self.__liked_afp = None
-        self.__reported_issues = None
-        self.__taxi_bookings = None
-        self.__created_afp = None
+        self.__current_location: 'Location' = None
+        self.__liked_afp: List['AFP'] = []
+        self.__reported_issues: List['ReportIssue'] = []
+        self.__taxi_bookings: List['TaxiBooking'] = []
+        self.__created_afp: List['AFP'] = []
+        # self.__id: int = itertools.count().next #TO CHECK
 
 
 class Citizen(User):
@@ -334,7 +335,7 @@ class ReportIssue(object):
 
     def is_pending(self):
         # TODO
-        pass
+        raise NotImplementedError()
 
     def get_issue_details(self) -> Tuple['Photograph', 'Location', str]:
         return self.__photograph, self.__location, self.__summary
