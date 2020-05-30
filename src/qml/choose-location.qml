@@ -3,25 +3,29 @@ import QtLocation 5.6
 import QtPositioning 5.6
 
 Item {
-    width: 400
-    height: 300
+    width: 640
+    height: 480
 
     Plugin {
-        id: mapPlugin
+        id: osmPlugin
         name: "osm"
     }
 
     Map {
+        id: map
         anchors.fill: parent
-        plugin: mapPlugin
-        center: QtPositioning.coordinate(38.24, 21.73)
-        zoomLevel: 16
+        plugin: osmPlugin
+        center: QtPositioning.coordinate(38.246473, 21.734790)
+        zoomLevel: 20
     }
 
     MouseArea {
+        acceptedButtons: Qt.RightButton
         anchors.fill: parent
-        onPressed: {
-            marker.coordinate = map.toCoordinate(Qt.point(mouse.x,mouse.y))
+        onClicked:  {
+            var selected_location = map.toCoordinate(Qt.point(mouse.x,mouse.y))
+            pin_location.lon = selected_location.longitude
+            pin_location.lat = selected_location.latitude
         }
     }
 }

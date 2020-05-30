@@ -160,6 +160,8 @@ class ChoosePhotographScreen(QtWidgets.QWidget):
             self.preview_photograph.setScaledContents(True)
 
     def on_choose_photograph_clicked(self):
+        #TODO
+        #model.report_issue.set_photograph(self.photograph)
         issue_description_screen = IssueDescriptionScreen()
         app.show_screen(issue_description_screen)
 
@@ -173,9 +175,10 @@ class ChooseLocationScreen(QtWidgets.QWidget):
         self.layout = QtWidgets.QVBoxLayout()
 
         # self.horizontal_layout = QtWidgets.QHBoxLayout()
-
+        self.pin_location = PinLocation()
         qml_path = os.path.join(os.path.dirname(__file__), "qml/choose-location.qml")
         self.quickWidget = QQuickWidget(QUrl.fromLocalFile(qml_path))
+        self.quickWidget.rootContext().setContextProperty("pin_location", self.pin_location)
         self.quickWidget.setResizeMode(QtQuickWidgets.QQuickWidget.SizeRootObjectToView)
         self.layout.addWidget(self.quickWidget)
         self.layout.addWidget(self.button_choose_location)
@@ -183,8 +186,39 @@ class ChooseLocationScreen(QtWidgets.QWidget):
         self.resize(400, 300)
 
     def on_choose_location_clicked(self):
+        #TODO
+        model.report_issue = ReportIssue()
+        model.report_issue.set_location(Location((self.pin_location.lat, self.pin_location.lon), LocationType.Obstacle))
         choose_photograph_screen = ChoosePhotographScreen()
         app.show_screen(choose_photograph_screen)
+
+
+#TODO Find a better name
+class PinLocation(QtCore.QObject):
+    def __init__(self, parent=None):
+        QtCore.QObject.__init__(self, parent)
+        self._lon: float = 0
+        self._lat: float = 0
+
+    @QtCore.Property(float)
+    def lon(self):
+        return self._lon
+
+    @lon.setter
+    def setLon(self, lon):
+        if self._lon == lon:
+            return
+        self._lon = lon
+    
+    @QtCore.Property(float)
+    def lat(self):
+        return self._lat
+
+    @lat.setter
+    def setLat(self, lat):
+        if self._lat == lat:
+            return
+        self._lat = lat
 
 
 class IssueDescriptionScreen(QtWidgets.QWidget):
@@ -208,6 +242,11 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
         if not self.text_edit_description.toPlainText():
             self.show_popup()
             app.show_screen(IssueDescriptionScreen())
+        else:
+            model.report_issue.set_summary(self.text_edit_description.toPlainText())
+            model.pending_issues.add_pending_issue(model.report_issue)
+            model.access_map.add_location(model.report_issue.get_location())
+            model.amea.add_report_issue(model.report_issue)
 
     def show_popup(self):
         msg = QtWidgets.QMessageBox()
