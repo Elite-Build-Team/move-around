@@ -109,13 +109,13 @@ class MapWidget(QtQuickWidgets.QQuickWidget):
         self.rootContext().setContextProperty("markermodel", self.marker_model)
         qml_path = os.path.join(os.path.dirname(__file__), "qml/access-map.qml")
         self.setSource(QtCore.QUrl.fromLocalFile(qml_path))
-        self.urls = ["http://maps.gstatic.com/mapfiles/ridefinder-images/mm_20_gray.png",
-                     "http://maps.gstatic.com/mapfiles/ridefinder-images/mm_20_red.png"]
+        self.urls = {LocationType.Parking:"../resources/parking.png",
+                     LocationType.Obstacle:"../resources/obstacle.png", LocationType.Toilet:"../resources/toilet.png"}
 
     def show_location_type(self, location_type: LocationType):
         for location in self.access_map.get_locations_by_type(location_type):
             coord = QtPositioning.QGeoCoordinate(*location.get_coordinates())
-            source = QtCore.QUrl(self.urls[0])
+            source = QtCore.QUrl(self.urls[location_type])
             # TODO Change icons
             self.marker_model.appendMarker({"position": coord, "source": source})
 
