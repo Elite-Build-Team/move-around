@@ -3,11 +3,8 @@ import os
 import sys
 from typing import List
 
-<<<<<<< HEAD:src/ui/move_around_ui.py
-=======
 from PySide2 import QtCore, QtWidgets, QtQuickWidgets, QtPositioning
 from PySide2 import QtGui
->>>>>>> another-code-attempt-1:src/ui.py
 from PySide2.QtCore import QUrl
 from PySide2.QtQuickWidgets import QQuickWidget
 from PySide2.QtWidgets import QFileDialog
