@@ -17,4 +17,11 @@ Item {
         center: QtPositioning.coordinate(38.24, 21.73)
         zoomLevel: 16
     }
+
+    MouseArea {
+        anchors.fill: parent
+        onPressed: {
+            marker.coordinate = map.toCoordinate(Qt.point(mouse.x,mouse.y))
+        }
+    }
 }
