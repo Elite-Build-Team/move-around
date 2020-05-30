@@ -20,10 +20,12 @@ class AccessMapScreen(QtWidgets.QWidget):
         self.toilets_checkbox = QtWidgets.QCheckBox("Toilets")
         self.parkings_checkbox = QtWidgets.QCheckBox("Parkings")
         self.obstacles_checkbox = QtWidgets.QCheckBox("Obstacles")
+        self.button_back = QtWidgets.QPushButton("Back")
 
         self.toilets_checkbox.stateChanged.connect(self.show_toilets)
         self.parkings_checkbox.stateChanged.connect(self.show_parkings)
         self.obstacles_checkbox.stateChanged.connect(self.show_obstacles)
+        self.button_back.clicked.connect(self.on_back_clicked)
 
         self.layout = QtWidgets.QVBoxLayout()
 
@@ -34,11 +36,16 @@ class AccessMapScreen(QtWidgets.QWidget):
         self.checkbox_layout.addWidget(self.toilets_checkbox)
         self.checkbox_layout.addWidget(self.parkings_checkbox)
         self.checkbox_layout.addWidget(self.obstacles_checkbox)
+        self.checkbox_layout.addWidget(self.button_back)
 
         self.layout.addLayout(self.checkbox_layout)
 
         self.setLayout(self.layout)
         self.resize(400, 300)
+
+    def on_back_clicked(self):
+        main_screen = MainScreen()
+        app.show_screen(main_screen)
 
     def show_toilets(self):
         if self.toilets_checkbox.isChecked():
