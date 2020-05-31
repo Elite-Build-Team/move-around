@@ -25,6 +25,7 @@
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm, [Diagrams.net](https://app.diagrams.net/)
 
+![Test Cases](/images/Test-Cases-v0.1.png)
 
 |  Test Case ID |  Test Scenario| Test Steps| Test Data | Expected Results  |  Actual Results | Pass/Fail  ||
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|
