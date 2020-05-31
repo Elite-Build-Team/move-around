@@ -1,4 +1,4 @@
-% Risk Assessment v0.3
+% Risk Assessment v0.4
 % Move around
 % ![](images/Logo.jpg)
 
@@ -72,9 +72,6 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 
 ![](images/Risk-assessment-Form-Testing.png)
-
-
-![](images/Risk-assessment-Form-Scrum.png)
 
 
 ![](images/Risk-assessment-Form-Xrimatodotisi.png)
