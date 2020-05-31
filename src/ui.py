@@ -168,16 +168,16 @@ class ChoosePhotographScreen(QtWidgets.QWidget):
     def on_input_file_clicked(self):
         filename, filter = QFileDialog.getOpenFileName(parent=self, caption='Open file', dir='.')
         types ={".png", '.jpg'}
-        if filename:
-            if not self.photograph[-4:] in types:
-                self.show_invalid_photo_type()
-                app.show_screen(ChoosePhotographScreen())
-            else: 
-                self.text_edit_photograph.setText(filename)
-                self.photograph = QtGui.QPixmap(filename)
-                self.photograph = self.photograph.scaled(700, 700, QtCore.Qt.KeepAspectRatio)
-                self.preview_photograph.setPixmap(self.photograph)
-                self.preview_photograph.setScaledContents(True)
+        if not filename[-4:] in types:
+            self.text_edit_photograph.setText(filename)
+            self.photograph = QtGui.QPixmap(filename)
+            self.photograph = self.photograph.scaled(700, 700, QtCore.Qt.KeepAspectRatio)
+            
+            self.show_invalid_photo_type()
+            app.show_screen(ChoosePhotographScreen())
+        else: 
+            self.preview_photograph.setPixmap(self.photograph)
+            self.preview_photograph.setScaledContents(True)
 
     def on_choose_photograph_clicked(self):
         #TODO
@@ -215,12 +215,8 @@ class ChooseLocationScreen(QtWidgets.QWidget):
     def on_choose_location_clicked(self):
         #TODO
         model.report_issue = ReportIssue()
-        if not self.pin_location.lat or not self.pin_location.lon:
-            self.show_popup()
-            app.show_screen(ChooseLocationScreen())
-        else:
-            model.report_issue.set_location(Location((self.pin_location.lat, self.pin_location.lon), LocationType.Obstacle))
-            app.show_screen(ChoosePhotographScreen())
+        model.report_issue.set_location(Location((self.pin_location.lat, self.pin_location.lon), LocationType.Obstacle))
+        app.show_screen(ChoosePhotographScreen())
 
 #TODO Find a better name
 class PinLocation(QtCore.QObject):
@@ -268,7 +264,7 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
     def on_submit_clicked(self):
         ms = MainScreen()
         app.show_screen(ms)
-        if not self.text_edit_description.toPlainText():
+        if self.text_edit_description.toPlainText().isnumeric() or not self.text_edit_description.toPlainText():
             self.show_popup()
             app.show_screen(IssueDescriptionScreen())
         else:
@@ -280,7 +276,7 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
     def show_popup(self):
         msg = QtWidgets.QMessageBox()
         msg.setWindowTitle("Αδυναμία Αποστολής Αναφοράς")
-        msg.setText("Δεν έχει εισαχθεί περιγραφή. Παρακαλώ συμπληρώστε ξανά.")
+        msg.setText("Έχει εισαχθεί λανθασμένη περιγραφή. Παρακαλώ συμπληρώστε ξανά.")
         msg.setIcon(QtWidgets.QMessageBox.Warning)
         msg.exec_()
 
