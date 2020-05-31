@@ -25,14 +25,9 @@
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm, [Diagrams.net](https://app.diagrams.net/)
 
-## Changelog
-<<<<<<< HEAD
-## v0.2
+### v0.2
 Προστέθηκαν για όλα τα διαγράμματα κλάσεις στα lifelines καθώς επίσης και γκρι χρώμα για τις κλάσεις που αφορούν οθόνες του UI.
 
-=======
-### v0.2
->>>>>>> c8a355e727cd994c20de9cf07d61d4a98052df3d
 * Sequence 3: Προστέθηκαν οι μέθοδοι επιλογής: choose_issue() και ανάκτησης/επιστροφής των δεδομένων αντικειμένου ReportIssue get_issue_details() και return_issue_details(). Επίσης αφαιρέθηκε το return() από τις μεθόδους update_map(), delete_pending_issue(), set_under_construction() και set_pending_issue() καθώς κρίθηκε περιττό.
 * Sequence 4: Προστέθηκαν οι μέθοδοι οι μέθοδοι επιλογής: choose_issue() και ανάκτησης/επιστροφής των δεδομένων αντικειμένου ReportIssue get_issue_details() και return_issue_details(). Επίσης αφαιρέθηκε το return() από τις μεθόδους update_map() και delete_under_construction() καθώς κρίθηκε περιττό.
 * Sequence 5: Προστέθηκε μήνυμα προειδοποίησης (οθόνη) στις περιπτώσεις των εναλλακτικών ροών καθώς και η οθόνη συμπλήρωσης στοιχείων. Επίσης η μέθοδος input_data() αντικαταστάθηκε από 2 μεθόδους choose_location() και insert_details(). 
