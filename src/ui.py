@@ -20,12 +20,12 @@ class AccessMapScreen(QtWidgets.QWidget):
         self.toilets_checkbox = QtWidgets.QCheckBox("Toilets")
         self.parkings_checkbox = QtWidgets.QCheckBox("Parkings")
         self.obstacles_checkbox = QtWidgets.QCheckBox("Obstacles")
-        self.button_back = QtWidgets.QPushButton("Back")
+        self.button_back = QtWidgets.QPushButton("Done")
 
         self.toilets_checkbox.stateChanged.connect(self.show_toilets)
         self.parkings_checkbox.stateChanged.connect(self.show_parkings)
         self.obstacles_checkbox.stateChanged.connect(self.show_obstacles)
-        self.button_back.clicked.connect(self.on_back_clicked)
+        self.button_back.clicked.connect(self.on_done_clicked)
 
         self.layout = QtWidgets.QVBoxLayout()
 
@@ -43,9 +43,8 @@ class AccessMapScreen(QtWidgets.QWidget):
         self.setLayout(self.layout)
         self.resize(720, 480)
 
-    def on_back_clicked(self):
-        main_screen = MainScreen()
-        app.show_screen(main_screen)
+    def on_done_clicked(self):
+        self.show_popup()
 
     def show_toilets(self):
         if self.toilets_checkbox.isChecked():
@@ -65,6 +64,23 @@ class AccessMapScreen(QtWidgets.QWidget):
         else:
             self.map.hide_location_type(LocationType.Obstacle)
 
+    def show_popup(self):
+        msg = QtWidgets.QMessageBox()
+        msg.setWindowTitle("Αναφορά Προβλήματος")
+        msg.setText("Θα θέλατε να κάνετε κάποια αναφορά;")
+        msg.setIcon(QtWidgets.QMessageBox.Question)
+        msg.setStandardButtons(QtWidgets.QMessageBox.Ok | QtWidgets.QMessageBox.Cancel)
+        msg.setDefaultButton(QtWidgets.QMessageBox.Ok)
+        
+        msg.buttonClicked.connect(self.button_do)
+        msg.exec_()
+
+    def button_do(self, i):
+        if i.text() == '&OK':
+            app.show_screen(ChooseLocationScreen())
+        else:
+            app.show_screen(MainScreen())
+            
 
 class MarkerModel(QtCore.QAbstractListModel):
     PositionRole, SourceRole = range(QtCore.Qt.UserRole, QtCore.Qt.UserRole + 2)
