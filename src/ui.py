@@ -167,20 +167,31 @@ class ChoosePhotographScreen(QtWidgets.QWidget):
 
     def on_input_file_clicked(self):
         filename, filter = QFileDialog.getOpenFileName(parent=self, caption='Open file', dir='.')
-
+        types ={".png", '.jpg'}
         if filename:
-            self.text_edit_photograph.setText(filename)
-            self.photograph = QtGui.QPixmap(filename)
-            self.photograph = self.photograph.scaled(700, 700, QtCore.Qt.KeepAspectRatio)
-            self.preview_photograph.setPixmap(self.photograph)
-            self.preview_photograph.setScaledContents(True)
+            if not self.photograph[-4:] in types:
+                self.show_invalid_photo_type()
+                app.show_screen(ChoosePhotographScreen())
+            else: 
+                self.text_edit_photograph.setText(filename)
+                self.photograph = QtGui.QPixmap(filename)
+                self.photograph = self.photograph.scaled(700, 700, QtCore.Qt.KeepAspectRatio)
+                self.preview_photograph.setPixmap(self.photograph)
+                self.preview_photograph.setScaledContents(True)
 
     def on_choose_photograph_clicked(self):
         #TODO
         #model.report_issue.set_photograph(self.photograph)
+        
         issue_description_screen = IssueDescriptionScreen()
         app.show_screen(issue_description_screen)
 
+    def show_invalid_photo_type(self):
+        msg = QtWidgets.QMessageBox()
+        msg.setWindowTitle("Εσφαλμένο είδος αρχείου")
+        msg.setText("Δόθηκε λάθος τύπος σαν είσοδος. Aποδεκτοί τύποι αρχείων .jpg και .png")
+        msg.setIcon(QtWidgets.QMessageBox.Warning)
+        msg.exec_()
 
 class ChooseLocationScreen(QtWidgets.QWidget):
     def __init__(self):
@@ -204,10 +215,12 @@ class ChooseLocationScreen(QtWidgets.QWidget):
     def on_choose_location_clicked(self):
         #TODO
         model.report_issue = ReportIssue()
-        model.report_issue.set_location(Location((self.pin_location.lat, self.pin_location.lon), LocationType.Obstacle))
-        choose_photograph_screen = ChoosePhotographScreen()
-        app.show_screen(choose_photograph_screen)
-
+        if not self.pin_location.lat or not self.pin_location.lon:
+            self.show_popup()
+            app.show_screen(ChooseLocationScreen())
+        else:
+            model.report_issue.set_location(Location((self.pin_location.lat, self.pin_location.lon), LocationType.Obstacle))
+            app.show_screen(ChoosePhotographScreen())
 
 #TODO Find a better name
 class PinLocation(QtCore.QObject):
@@ -271,10 +284,11 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
         msg.setIcon(QtWidgets.QMessageBox.Warning)
         msg.exec_()
 
+  
+
 class MainScreen(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
-
         self.welcome_message = QtWidgets.QLabel("Welcome to Move-around!")
         self.button_report_issue = QtWidgets.QPushButton("Report Issue")
         self.button_access_map = QtWidgets.QPushButton("Access Map")
