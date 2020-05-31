@@ -46,6 +46,22 @@ PHASE_4_FILES_REV_3 = \
 	Domain-model-v0.3.pdf \
 	Use-cases-v0.3.pdf
 
+PHASE_4_FILES = \
+	Test-cases-v0.1.pdf \
+	Class-diagram-v0.1.pdf
+
+PHASE_5_FILES_REV_2 = \
+	Sequence-diagram-v0.2.pdf \
+	Project-code-v0.2.pdf
+
+PHASE_5_FILES_REV_3 = \
+	Robustness-diagrams-v0.3.pdf
+	Use-cases-v0.4.pdf \
+	Team-plan-v0.3.pdf
+
+PHASE_5_FILES_REV_4 = \
+	Risk-assessment-v0.4.pdf \
+	Use-cases-v0.4.pdf
 
 EXECUTABLES = pandoc
 K := $(foreach exec,$(EXECUTABLES),\
@@ -82,6 +98,17 @@ $(PHASE_4_FILES_REV_2): %-v0.2.pdf : %.md
 $(PHASE_4_FILES_REV_3): %-v0.3.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
+$(PHASE_5_FILES): %-v0.1.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_5_FILES_REV_2): %-v0.2.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_5_FILES_REV_3): %-v0.3.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_5_FILES_REV_4): %-v0.3.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 .PHONY: phase-1
 phase-1: $(PHASE_1_FILES)
@@ -135,6 +162,20 @@ phase-4: $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
 phase-4-zip: $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
 	cd build
 	zip -r software-engineering-2020.zip $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
+	cd ..
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-5
+phase-5: $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-5-zip
+.ONESHELL:
+phase-5-zip: $(PHASE_5_FILES) $(PHASE_5_FILES_REV_2) $(PHASE_5_FILES_REV_3) $(PHASE_5_FILES_REV_4)
+	cd build
+	zip -r software-engineering-2020.zip $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3) $(PHASE_5_FILES_REV_4)
 	cd ..
 	@echo
 	@echo "Build finished!"
