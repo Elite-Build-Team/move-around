@@ -51,12 +51,11 @@ PHASE_4_FILES = \
 	Class-diagram-v0.1.pdf
 
 PHASE_5_FILES_REV_2 = \
-	Sequence-diagram-v0.2.pdf \
+	Sequence-diagrams-v0.2.pdf \
 	Project-code-v0.2.pdf
 
 PHASE_5_FILES_REV_3 = \
-	Robustness-diagrams-v0.3.pdf
-	Use-cases-v0.4.pdf \
+	Robustness-diagrams-v0.3.pdf \
 	Team-plan-v0.3.pdf
 
 PHASE_5_FILES_REV_4 = \
@@ -107,7 +106,7 @@ $(PHASE_5_FILES_REV_2): %-v0.2.pdf : %.md
 $(PHASE_5_FILES_REV_3): %-v0.3.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
-$(PHASE_5_FILES_REV_4): %-v0.3.pdf : %.md
+$(PHASE_5_FILES_REV_4): %-v0.4.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 .PHONY: phase-1
@@ -167,7 +166,7 @@ phase-4-zip: $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
 	@echo "Build finished!"
 
 .PHONY: phase-5
-phase-5: $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3)
+phase-5: $(PHASE_5_FILES) $(PHASE_5_FILES_REV_2) $(PHASE_5_FILES_REV_3) $(PHASE_5_FILES_REV_4)
 	@echo
 	@echo "Build finished!"
 
