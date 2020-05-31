@@ -3,7 +3,7 @@ import QtLocation 5.6
 import QtPositioning 5.6
 
 Item {
-    width: 640
+    width: 720
     height: 480
 
     Plugin {

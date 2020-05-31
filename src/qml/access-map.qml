@@ -4,7 +4,7 @@ import QtLocation 5.11
 
 Rectangle {
     id:rectangle
-    width: 640
+    width: 720
     height: 480
     Plugin {
         id: osmPlugin

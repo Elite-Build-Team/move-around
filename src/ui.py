@@ -41,7 +41,7 @@ class AccessMapScreen(QtWidgets.QWidget):
         self.layout.addLayout(self.checkbox_layout)
 
         self.setLayout(self.layout)
-        self.resize(400, 300)
+        self.resize(720, 480)
 
     def on_back_clicked(self):
         main_screen = MainScreen()
@@ -147,7 +147,7 @@ class ChoosePhotographScreen(QtWidgets.QWidget):
         self.layout.addWidget(self.button_submit_report)
         self.layout.addWidget(self.preview_photograph)
         self.setLayout(self.layout)
-        self.resize(400, 300)
+        self.resize(720, 480)
 
     def on_input_file_clicked(self):
         filename, filter = QFileDialog.getOpenFileName(parent=self, caption='Open file', dir='.')
@@ -183,7 +183,7 @@ class ChooseLocationScreen(QtWidgets.QWidget):
         self.layout.addWidget(self.quickWidget)
         self.layout.addWidget(self.button_choose_location)
         self.setLayout(self.layout)
-        self.resize(400, 300)
+        self.resize(720, 480)
 
     def on_choose_location_clicked(self):
         #TODO
@@ -234,7 +234,7 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
         self.layout.addWidget(self.text_edit_description)
         self.layout.addWidget(self.button_submit_report)
         self.setLayout(self.layout)
-        self.resize(400, 300)
+        self.resize(720, 480)
 
     def on_submit_clicked(self):
         ms = MainScreen()
@@ -271,7 +271,7 @@ class MainScreen(QtWidgets.QWidget):
         self.layout.addWidget(self.button_report_issue)
         self.layout.addWidget(self.button_access_map)
         self.setLayout(self.layout)
-        self.resize(400, 300)
+        self.resize(720, 480)
 
     def on_report_issue_clicked(self):
         choose_location_screen = ChooseLocationScreen()
@@ -288,7 +288,7 @@ class Application(QtWidgets.QWidget):
         self.layout = QtWidgets.QVBoxLayout()
         self.widget = None
         self.setLayout(self.layout)
-        self.resize(400, 300)
+        self.resize(720, 480)
 
     def show_screen(self, widget):
         if self.widget is not None:
@@ -306,7 +306,7 @@ if __name__ == '__main__':
     qapp = QtWidgets.QApplication([])
     qapp.setApplicationName('Move Around')
     app = Application()
-    app.resize(400, 300)
+    app.resize(720, 480)
     app.show()
 
     main_screen = MainScreen()
