@@ -5,6 +5,10 @@ virtualenv .
 pip3 install requirements.txt
 ```
 
+## Demo
+
+![](screenshots/move-around-demo.gif)
+
 ## Screenshots
 
 ### Κύρια οθόνη
