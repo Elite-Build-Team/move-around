@@ -28,7 +28,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 \newpage
 
 ## Changelog
-## v.02
+## v0.2
 Οι σημαντικές αλλαγές από το v0.1 στο v0.2 έχουν υπογραμμιστεί με \textcolor{blue}{μπλέ} χρώμα.
 
 * Robustness 2: Εμπλουτισμός του βήματος 8 ώστε να προσθέτει την αναφορά προβλήματος στη λίστα με τις Βλάβες υπό Επισκευή του Δήμου καθώς και στην Αναφορές του χρήστη.
@@ -39,8 +39,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 
 ## Changelog
-## v.03
+## v0.3
 
+* Robustness 2: Προσθήκη δύο επιπλέον control objects, "Επέστρεψε" μεταξύ "Οθόνη Ιστορικού Αναφορών" και "Ενημέρωση Αναφοράς" και "Ανάκτηση αναφορών" μεταξύ "Οθόνη Ιστορικού Αναφορών" και οθόνες χρήστη"
 * Robustness 3: Με βάση την αλλαγή στη λεκτική περιγραφή του use case προστέθηκε νέο control object "Επέλεξε" μεταξύ Pending Issues και ReportIssue 
 * Robustness 4: Με βάση την αλλαγή στη λεκτική περιγραφή του use case προστέθηκε νέο control object "Επέλεξε" μεταξύ Under Construction Issues και ReportIssue.
 * Robustness 5: Στο διάγραμμα προστέθηκε η οθόνη συμπλήρωσης στοιχείων και τα μηνύματα προειδοποίησης των εναλλακτικών ροών καθώς και τα κατάλληλα control objects μετάβασης μεταξύ αυτών.
