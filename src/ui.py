@@ -259,7 +259,7 @@ class IssueDescriptionScreen(QtWidgets.QWidget):
             self.show_popup()
             app.show_screen(IssueDescriptionScreen())
         else:
-            model.report_issue.set_summary(self.text_edit_description.toPlainText())
+            model.report_issue.set_description(self.text_edit_description.toPlainText())
             model.pending_issues.add_pending_issue(model.report_issue)
             model.access_map.add_location(model.report_issue.get_location())
             model.amea.add_report_issue(model.report_issue)

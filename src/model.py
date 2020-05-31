@@ -327,28 +327,28 @@ class ReportIssue(object):
     def set_location(self, location: 'Location'):
         self.__location = location
 
-    def get_summary(self) -> str:
-        return self.__summary
+    def get_description(self) -> str:
+        return self.__description
 
-    def set_summary(self, summary: str):
-        self.__summary = summary
+    def set_description(self, description: str):
+        self.__description = description
 
     def is_pending(self):
         # TODO
         raise NotImplementedError()
 
     def get_issue_details(self) -> Tuple['Photograph', 'Location', str]:
-        return self.__photograph, self.__location, self.__summary
+        return self.__photograph, self.__location, self.__description
 
-    def update_issue_details(self, photograph: 'Photograph', location: 'Location', summary: str):
+    def update_issue_details(self, photograph: 'Photograph', location: 'Location', description: str):
         self.__photograph = photograph
         self.__location = location
-        self.__summary = summary
+        self.__description = description
 
     def __init__(self):
         self.__photograph: Photograph = None
         self.__location: Location = None
-        self.__summary: str = ''
+        self.__description: str = ''
 
 
 class ScheduledMeetingStatus(Enum):
