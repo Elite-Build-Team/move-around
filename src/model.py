@@ -443,5 +443,3 @@ class TaxiBooking(object):
         self.__date_time: datetime = None
         self.__amea: 'AMEA' = None
         self.__location: 'Location' = None
-
-
