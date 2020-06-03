@@ -60,7 +60,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 Επίσης, τα σαββατοκύριακα έχουν συνυπολογιστεί κανονικά ως εργάσιμες μέρες για την εργασία στο πρότζεκτ.
 
 
-![Gantt chart](images/Team-plan-Gantt-chart-v0.2.png)
+![Gantt chart](images/Team-plan-Gantt-chartv0.2.png)
 
 ![Pert chart](images/Team-plan-Pert-chartv0.2.png)
 
