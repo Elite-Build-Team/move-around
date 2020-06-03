@@ -60,9 +60,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 Επίσης, τα σαββατοκύριακα έχουν συνυπολογιστεί κανονικά ως εργάσιμες μέρες για την εργασία στο πρότζεκτ.
 
 
-![Gantt chart](images/Team-plan-Gantt-chart.png)
+![Gantt chart](images/Team-plan-Gantt-chart-v0.2.png)
 
-![Pert chart](images/Team-plan-Pert-chart.png)
+![Pert chart](images/Team-plan-Pert-chartv0.2.png)
 
 ### Critical Path
 To critical path απεικονίζεται στο *PERT Chart* με κόκκινες ακμές. Η συνολική του διάρκεια σε ημέρες είναι **72**.
