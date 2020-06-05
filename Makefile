@@ -46,7 +46,7 @@ PHASE_4_FILES_REV_3 = \
 	Domain-model-v0.3.pdf \
 	Use-cases-v0.3.pdf
 
-PHASE_4_FILES = \
+PHASE_5_FILES = \
 	Test-cases-v0.1.pdf \
 	Class-diagram-v0.1.pdf
 
@@ -61,6 +61,21 @@ PHASE_5_FILES_REV_3 = \
 PHASE_5_FILES_REV_4 = \
 	Risk-assessment-v0.4.pdf \
 	Use-cases-v0.4.pdf
+
+PHASE_6_FILES = \
+	Project-plan-v0.1.pdf \
+	Project-description-v0.1.pdf \
+	Team-plan-v0.1.pdf \
+	Risk-assessment-v0.1.pdf \
+	Team-risk-assessment-v0.1.pdf \
+	Feasibility-study-v0.1.pdf \
+	Domain-model-v0.1.pdf \
+	Use-cases-v0.1.pdf \
+	Robustness-diagrams-v0.1.pdf \
+	Sequence-diagrams-v0.1.pdf \
+	Project-code-v0.1.pdf \
+	Test-cases-v0.1.pdf \
+	Class-diagram-v0.1.pdf
 
 EXECUTABLES = pandoc
 K := $(foreach exec,$(EXECUTABLES),\
@@ -107,6 +122,9 @@ $(PHASE_5_FILES_REV_3): %-v0.3.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 $(PHASE_5_FILES_REV_4): %-v0.4.pdf : %.md
+	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
+
+$(PHASE_6_FILES): %-v1.0.pdf : %.md
 	pandoc $< --metadata-file=misc/metadata.yaml -V mainfont='$(MAINFONT)' -V fontsize=12pt --pdf-engine=$(PDFENGINE) -o $(BUILDDIR)/$@
 
 .PHONY: phase-1
@@ -174,7 +192,21 @@ phase-5: $(PHASE_5_FILES) $(PHASE_5_FILES_REV_2) $(PHASE_5_FILES_REV_3) $(PHASE_
 .ONESHELL:
 phase-5-zip: $(PHASE_5_FILES) $(PHASE_5_FILES_REV_2) $(PHASE_5_FILES_REV_3) $(PHASE_5_FILES_REV_4)
 	cd build
-	zip -r software-engineering-2020.zip $(PHASE_4_FILES) $(PHASE_4_FILES_REV_2) $(PHASE_4_FILES_REV_3) $(PHASE_5_FILES_REV_4)
+	zip -r software-engineering-2020.zip $(PHASE_5_FILES) $(PHASE_5_FILES_REV_2) $(PHASE_5_FILES_REV_3) $(PHASE_5_FILES_REV_4)
+	cd ..
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-6
+phase-6: $(PHASE_6_FILES)
+	@echo
+	@echo "Build finished!"
+
+.PHONY: phase-6-zip
+.ONESHELL:
+phase-6-zip: $(PHASE_6_FILES)
+	cd build
+	zip -r software-engineering-2020.zip $(PHASE_6_FILES)
 	cd ..
 	@echo
 	@echo "Build finished!"
