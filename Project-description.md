@@ -93,31 +93,49 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ## Τελικές οθόνες συστήματος
 ### Χάρτης Πρόσβασης (Access Map)
 ![](src/screenshots/access-map-screen.png)
+\newpage
 ![](src/screenshots/do-you-want-to-report-issue.png)
+
+\newpage
+
 ### Αναφορά Προβλήματος (Report Issue)
 ![](src/screenshots/choose-location-screen.png)
+\newpage
 ![](src/screenshots/choose-photograph-screen.png)
+\newpage
 ![](src/screenshots/issue-description-screen.png)
 
 \newpage
 
 ## Ιστορικό οθονών
 ### Αναφορά Προβλήματος (Report Issue)
-
-#### Mock-up screen
+### Mock-up screen
 ![](images/Project-description-1.png)
-#### Αρχική σχεδίαση
+\newpage
+
+### Αρχική σχεδίαση
 ![](images/Project-description-Politis.png)
-#### Τελικές οθόνη συστήματος
+\newpage
+
+### Τελικές οθόνη συστήματος
 ![](src/screenshots/choose-location-screen.png)
+\newpage
 ![](src/screenshots/choose-photograph-screen.png)
+\newpage
 ![](src/screenshots/issue-description-screen.png)
 
+\newpage
+
 ### Χάρτης Πρόσβασης (Access Map)
-#### Mock-up screen
+### Mock-up screen
 ![](images/Project-description-1.png)
-#### Αρχική σχεδίαση
+\newpage
+
+### Αρχική σχεδίαση
 ![](images/Project-description-AMEA1.png)
-#### Τελικές οθόνες συστήματος
+\newpage
+
+### Τελικές οθόνες συστήματος
 ![](src/screenshots/access-map-screen.png)
+\newpage
 ![](src/screenshots/do-you-want-to-report-issue.png)
