@@ -63,19 +63,18 @@ PHASE_5_FILES_REV_4 = \
 	Use-cases-v0.4.pdf
 
 PHASE_6_FILES = \
-	Project-plan-v0.1.pdf \
-	Project-description-v0.1.pdf \
-	Team-plan-v0.1.pdf \
-	Risk-assessment-v0.1.pdf \
-	Team-risk-assessment-v0.1.pdf \
-	Feasibility-study-v0.1.pdf \
-	Domain-model-v0.1.pdf \
-	Use-cases-v0.1.pdf \
-	Robustness-diagrams-v0.1.pdf \
-	Sequence-diagrams-v0.1.pdf \
-	Project-code-v0.1.pdf \
-	Test-cases-v0.1.pdf \
-	Class-diagram-v0.1.pdf
+	Project-plan-v1.0.pdf \
+	Project-description-v1.0.pdf \
+	Team-plan-v1.0.pdf \
+	Risk-assessment-v1.0.pdf \
+	Team-risk-assessment-v1.0.pdf \
+	Feasibility-study-v1.0.pdf \
+	Use-cases-v1.0.pdf \
+	Robustness-diagrams-v1.0.pdf \
+	Sequence-diagrams-v1.0.pdf \
+	Project-code-v1.0.pdf \
+	Test-cases-v1.0.pdf \
+	Class-diagram-v1.0.pdf
 
 EXECUTABLES = pandoc
 K := $(foreach exec,$(EXECUTABLES),\
