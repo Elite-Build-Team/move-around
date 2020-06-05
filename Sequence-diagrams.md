@@ -40,6 +40,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 * Sequence 9: Διασπάστηκε σε Sequence 9 και Sequence 10, σύμφωνα με την αρχική διάσπαση του Use - Case.
 * Sequence 10: Αλλαγή της αρίθμησης από 10 σε 11.
 
+### v1.0
+Eίναι η έκδοση v0.2 χωρίς καμία αλλαγή.
+
 \newpage
 
 ### 1. Βασική Ροή "Αναφορά προβλήματος"

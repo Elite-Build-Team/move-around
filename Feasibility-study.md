@@ -18,6 +18,9 @@
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm, [Diagrams.net](https://app.diagrams.net/)
 
+### v1.0
+Eίναι η έκδοση v0.1 χωρίς καμία αλλαγή.
+
 \newpage
 
 Η ιδέα για μία ανάπτυξη εφαρμογής για **ΑΜΕΑ** μπορεί να είναι πρωτότυπη και καινοτόμα, ωστόσο η υλοποίηση της συναντά εμπόδια, τα οποία πρέπει η ομάδα να υπερβεί ώστε να τη βγάλει εις πέρας.
