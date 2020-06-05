@@ -28,6 +28,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 * Αφαίρεση της συνδρομής στο Lucid-chart από τα κόστη και προσθήκη του τέλους ενεργοποίησης του App Store.
 * Μικρές αλλαγές στη μορφοποίηση.
 
+### v1.0
+Eίναι η έκδοση v0.2 χωρίς καμία αλλαγή.
+
 \newpage
 
 ## Μέθοδος οργάνωσης

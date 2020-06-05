@@ -118,4 +118,5 @@ To critical path απεικονίζεται στο *PERT Chart* με κόκκι�
 
 ## Stats
 Στην παρακάτω εικόνα φαίνονται τα **Lines of Code (LOC)** του *Github Repository* του έργου σε όλη τη διάρκεια του.
+
 ![Lines of Code](images/Team-plan-Lines-of-Code.png)
