@@ -292,8 +292,16 @@ class MainScreen(QtWidgets.QWidget):
         self.button_report_issue.clicked.connect(self.on_report_issue_clicked)
         self.button_access_map.clicked.connect(self.on_access_map_clicked)
 
+        #TODO
+        self.logo = QtGui.QPixmap('/images/Logo.jpg')
+        self.label = QtWidgets.QLabel()
+        self.label.setPixmap(self.logo)
+        self.label.show()
+        #self.resize(self.label.width(), self.label.height())
+
         self.layout = QtWidgets.QVBoxLayout()
         self.layout.addWidget(self.welcome_message)
+        self.layout.addWidget(self.label)
         self.layout.addWidget(self.button_report_issue)
         self.layout.addWidget(self.button_access_map)
         self.setLayout(self.layout)
