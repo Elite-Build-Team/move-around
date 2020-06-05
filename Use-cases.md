@@ -1,4 +1,4 @@
-% Use Cases v0.4
+% Use Cases v1.0
 % Move around
 % ![](images/Logo.jpg)
 

@@ -1,4 +1,4 @@
-% Project Description v0.1
+% Project Description v1.0
 % Move around
 % ![](images/Logo.jpg)
 

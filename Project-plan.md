@@ -1,4 +1,4 @@
-% Project Plan v0.2
+% Project Plan v1.0
 % Move around
 % ![](images/Logo.jpg)
 

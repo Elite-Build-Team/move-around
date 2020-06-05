@@ -1,4 +1,4 @@
-% Team Plan v0.2
+% Team Plan v1.0
 % Move around
 % ![](images/Logo.jpg)
 
