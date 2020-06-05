@@ -27,7 +27,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ### Changelog 
 ### v0.2
 
-Σε αυτό το παραδοτέο αναθεωρήσαμε την μορφοποίηση των mock-up screens. Οι οθόνες επαναδημιουργήθηκαν με rapid prototyping tool καθώς θεωρήθηκε θεμητή αλλαγή αφού προσδιορίστηκαν με ακρίβεια τα use-cases του project. Οι οθόνες που υλοποιήθηκαν δεν είναι όλες όσες θα έχει η εφαρμογή αλλά ενδεκτικά αυτές που θα δείχναμε στον πελάτη.
+Σε αυτό το παραδοτέο αναθεωρήσαμε την μορφοποίηση των mock-up screens. Οι οθόνες επαναδημιουργήθηκαν με rapid prototyping tool καθώς θεωρήθηκε θεμητή αλλαγή αφού προσδιορίστηκαν με ακρίβεια τα use-cases του project. Οι οθόνες που υλοποιήθηκαν δεν είναι όλες όσες θα έχει η εφαρμογή αλλά ενδεικτικά αυτές που θα δείχναμε στον πελάτη.
 Επίσης, προστέθηκε η επιλογή του Α.Μ.Ε.Α. για κλήση taxi και στους φορείς για εξέταση του συνόλου των αναφορών τους.
 
 \newpage
@@ -39,9 +39,18 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 Την αναφορά κάθε προβλήματος σε κάθε περίπτωση θα εξετάζει ο Δήμος της εκάστοτε πόλης και θα θέτει ο ίδιος σε προτεραιότητα τη λύση αυτών ενημερώνοντας τους κατάλληλους φορείς.
 
 ## Mockup screens
+![Mock-up για «A.M.E.A.»](images/Project-description-1.png)
+
+![Mock-up για «Πολίτες»](images/Project-description-2.png)
+
+![Mock-up για «Φορείς»](images/Project-description-3.png)
+
+![Mock-up για «Δήμος»](images/Project-description-4.png)
+
+## Αρχική σχεδίαση
 Παρακάτω παρουσιάζονται τα mock-upscreens για κάθε δυνατό χρήστη της εφαρμογής Move Around.
 
-## Mock-up για "A.M.E.A."
+## Αρχική σχεδίαση για "A.M.E.A."
 ### Χάρτης πρόσβασης.
 
 ![](images/Project-description-AMEA1.png)
@@ -56,21 +65,21 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 \newpage
 
-## Mock-up για Πολίτες.
+## Αρχική σχεδίαση για Πολίτες.
 ### Αναφορά προβλήματος.
 
 ![](images/Project-description-Politis.png)
 
 \newpage
 
-## Mock-up για Φορείς.
+## Αρχική σχεδίαση για Φορείς.
 ### Προγραμματισμένες επισκέψεις.
 
 ![](images/Project-description-Foreas.png)
 
 \newpage
 
-## Mock-up για Δήμος.
+## Αρχική σχεδίαση για Δήμος.
 ### Διαχείριση αναφορών
 
 ![](images/Project-description-Dimos1.png)
@@ -78,3 +87,37 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ### Ενημέρωση χάρτη
 
 ![](images/Project-description-Dimos2.png)
+
+\newpage
+
+## Τελικές οθόνες συστήματος
+### Χάρτης Πρόσβασης (Access Map)
+![](src/screenshots/access-map-screen.png)
+![](src/screenshots/do-you-want-to-report-issue.png)
+### Αναφορά Προβλήματος (Report Issue)
+![](src/screenshots/choose-location-screen.png)
+![](src/screenshots/choose-photograph-screen.png)
+![](src/screenshots/issue-description-screen.png)
+
+\newpage
+
+## Ιστορικό οθονών
+### Αναφορά Προβλήματος (Report Issue)
+
+#### Mock-up screen
+![](images/Project-description-1.png)
+#### Αρχική σχεδίαση
+![](images/Project-description-Politis.png)
+#### Τελικές οθόνη συστήματος
+![](src/screenshots/choose-location-screen.png)
+![](src/screenshots/choose-photograph-screen.png)
+![](src/screenshots/issue-description-screen.png)
+
+### Χάρτης Πρόσβασης (Access Map)
+#### Mock-up screen
+![](images/Project-description-1.png)
+#### Αρχική σχεδίαση
+![](images/Project-description-AMEA1.png)
+#### Τελικές οθόνες συστήματος
+![](src/screenshots/access-map-screen.png)
+![](src/screenshots/do-you-want-to-report-issue.png)
