@@ -31,6 +31,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 ### v0.2
 Οι αλλαγές που έχουνε γίνει μεταξύ των διαφόρων versions του κώδικα μπορούν να εμφανιστούν με το εργαλείο git diff. 
 
+### v1.0
+H τελική έκδοση του κώδικα βρίσκεται στο git του έργου.
+
 \newpage
 
 ## Αποθετήριο Κώδικα Project
