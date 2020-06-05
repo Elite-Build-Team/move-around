@@ -18,6 +18,7 @@
 ## Εργαλεία
 Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www.tablesgenerator.com/), [Mockflow](https://www.mockflow.com/), VisualParadigm, [Diagrams.net](https://app.diagrams.net/)
 
+## Changelog
 ### v1.0
 Eίναι η έκδοση v0.1 χωρίς καμία αλλαγή.
 
