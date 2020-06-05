@@ -27,4 +27,4 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 \newpage
 
-![Class-Diagram](images/Class-Diagram.png)
+![Class-Diagram](images/Class-Diagram-v0.1.png)
