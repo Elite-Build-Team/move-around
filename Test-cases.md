@@ -27,9 +27,10 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 ## Changelog
 ### v1.0
-* Προστέθηκε περιγραφή των tests που πραγματοποιήθηκαν.
+* Προστέθηκαν αποτελέσματα των tests που πραγματοποιήθηκαν.
 
-## Testing
-\textcolor{blue}{Για τον έλεγχο του κώδικα του πρότζεκτ χρησιμοποιήθηκε η τεχνική του **Condition Coverage Testing**, για τα use cases που υλοποιήθηκαν. Το testing βοήθησε ώστε ο κώδικας να πάρει την τελική του μορφή, δηλαδή προστέθηκαν error messages για τα data types, βελτιώθηκε το integration του Class Model στο UI κ.α.}
+## Αποτελέσματα ελέγχου στον κώδικα
+Για τον έλεγχο του κώδικα του πρότζεκτ χρησιμοποιήθηκε η τεχνική του **Condition Coverage Testing**, για τα use cases που υλοποιήθηκαν. Το testing βοήθησε ώστε ο κώδικας να πάρει την τελική του μορφή, δηλαδή προστέθηκαν error messages για τα data types, βελτιώθηκε το integration του Class Model στο UI κ.α.
 
+## Test Cases
 ![Test Cases](/images/Test-Cases-v0.1.png)
