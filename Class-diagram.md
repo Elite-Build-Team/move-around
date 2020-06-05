@@ -1,4 +1,4 @@
-% Domain Model v0.3
+% Class Diagram v1.0
 % Move around
 % ![](images/Logo.jpg)
 

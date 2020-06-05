@@ -1,4 +1,4 @@
-% Team Plan v0.2
+% Team Plan v1.0
 % Move around
 % ![](images/Logo.jpg)
 
@@ -55,7 +55,7 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 * Milestone #1: *Requirements Review*
 * Milestone #2: *Preliminary Design Review*
-* Milestone #3: *Detailed / Critical Desing Review*
+* Milestone #3: *Detailed / Critical Design Review*
 * Milestone #4: *Testing and Delivery*
 
 Ως **τυπικά υποέργα (ΤΥ)** έχουν ορισθεί τα παραδοτέα κάθε *sprint cycle*, τα οποία αναφέρονται στα charts με τα ονόματα τους. Οι εξαρτήσεις τους, όπως απεικονίζονται, ακολουθούν την *ICONIX* **Agile** οργάνωση και πάντα σύμφωνη με τη **SCRUM** method που χρησιμοποιεί η ομάδα.

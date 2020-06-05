@@ -1,4 +1,4 @@
-% Sequence Diagrams v0.2
+% Sequence Diagrams v1.0
 % Move around
 % ![](images/Logo.jpg)
 
