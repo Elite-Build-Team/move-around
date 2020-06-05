@@ -25,11 +25,21 @@ python3 ui.py
 ## Screenshots
 
 ### Κύρια οθόνη
+![](screenshots/main-screen.png)
+
+### Χάρτης Πρόσβασης
+#### Οθόνη 1
 ![](screenshots/access-map-screen.png)
+
+#### Οθόνη 2
+![](screenshots/do-you-want-to-report-issue.png)
 
 ### Αναφορά προβλήματος
 #### Οθόνη 1
-![](screenshots/report-issue-screen-1.png)
+![](screenshots/choose-location-screen.png)
 
 #### Οθόνη 2
-![](screenshots/report-issue-screen-3.png)
+![](screenshots/choose-photograph-screen.png)
+
+#### Οθόνη 3
+![](screenshots/issue-description-screen.png)
