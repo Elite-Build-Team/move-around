@@ -30,6 +30,6 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 * Προστέθηκε περιγραφή των tests που πραγματοποιήθηκαν.
 
 ## Testing
-Για τον έλεγχο του κώδικα του πρότζεκτ χρησιμοποιήθηκε η τεχνική του **Condition Coverage Testing**, για τα use cases που υλοποιήθηκαν. Το testing βοήθησε ώστε ο κώδικας να πάρει την τελική του μορφή, δηλαδή προστέθηκαν error messages για τα data types, βελτιώθηκε το integration του Class Model στο UI κ.α.
+\textcolor{blue}{Για τον έλεγχο του κώδικα του πρότζεκτ χρησιμοποιήθηκε η τεχνική του **Condition Coverage Testing**, για τα use cases που υλοποιήθηκαν. Το testing βοήθησε ώστε ο κώδικας να πάρει την τελική του μορφή, δηλαδή προστέθηκαν error messages για τα data types, βελτιώθηκε το integration του Class Model στο UI κ.α.}
 
 ![Test Cases](/images/Test-Cases-v0.1.png)

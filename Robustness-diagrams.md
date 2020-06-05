@@ -48,6 +48,9 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 * Robustness 9 : Διασπάστηκε σύμφωνα με τα αντίστοιχα Use - Cases σε Robustness 9 και Robustness 10.
 * Robustness 10 : Αλλαγή της αρίθμησης από 10 σε 11.
 
+### v1.0
+Eίναι η έκδοση v0.3 χωρίς καμία αλλαγή.
+
 \newpage
 
 ### 1. Βασική Ροή "Αναφορά προβλήματος"
