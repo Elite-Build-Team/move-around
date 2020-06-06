@@ -168,16 +168,16 @@ class ChoosePhotographScreen(QtWidgets.QWidget):
     def on_input_file_clicked(self):
         filename, filter = QFileDialog.getOpenFileName(parent=self, caption='Open file', dir='.')
         types ={".png", '.jpg'}
-        if not filename[-4:] in types:
-            self.text_edit_photograph.setText(filename)
-            self.photograph = QtGui.QPixmap(filename)
-            self.photograph = self.photograph.scaled(700, 700, QtCore.Qt.KeepAspectRatio)
+        # if not filename[-4:] in types:
+        self.text_edit_photograph.setText(filename)
+        self.photograph = QtGui.QPixmap(filename)
+        self.photograph = self.photograph.scaled(700, 700, QtCore.Qt.KeepAspectRatio)
             
-            self.show_invalid_photo_type()
-            app.show_screen(ChoosePhotographScreen())
-        else: 
-            self.preview_photograph.setPixmap(self.photograph)
-            self.preview_photograph.setScaledContents(True)
+        #     self.show_invalid_photo_type()
+        #     app.show_screen(ChoosePhotographScreen())
+        # else: 
+        self.preview_photograph.setPixmap(self.photograph)
+        self.preview_photograph.setScaledContents(True)
 
     def on_choose_photograph_clicked(self):
         #TODO
