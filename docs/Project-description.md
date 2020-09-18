@@ -97,18 +97,18 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 
 ## Τελικές οθόνες συστήματος
 ### Χάρτης Πρόσβασης (Access Map)
-![](src/screenshots/access-map-screen.png)
+![](../src/screenshots/access-map-screen.png)
 \newpage
-![](src/screenshots/do-you-want-to-report-issue.png)
+![](../src/screenshots/do-you-want-to-report-issue.png)
 
 \newpage
 
 ### Αναφορά Προβλήματος (Report Issue)
-![](src/screenshots/choose-location-screen.png)
+![](../src/screenshots/choose-location-screen.png)
 \newpage
-![](src/screenshots/choose-photograph-screen.png)
+![](../src/screenshots/choose-photograph-screen.png)
 \newpage
-![](src/screenshots/issue-description-screen.png)
+![](../src/screenshots/issue-description-screen.png)
 
 \newpage
 
@@ -123,11 +123,11 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 \newpage
 
 ### Τελικές οθόνη συστήματος
-![](src/screenshots/choose-location-screen.png)
+![](../src/screenshots/choose-location-screen.png)
 \newpage
-![](src/screenshots/choose-photograph-screen.png)
+![](../src/screenshots/choose-photograph-screen.png)
 \newpage
-![](src/screenshots/issue-description-screen.png)
+![](../src/screenshots/issue-description-screen.png)
 
 \newpage
 
@@ -141,6 +141,6 @@ Markdown, VSCode, GanttProject, Pandoc, Lightshot, [Table generator](https://www
 \newpage
 
 ### Τελικές οθόνες συστήματος
-![](src/screenshots/access-map-screen.png)
+![](../src/screenshots/access-map-screen.png)
 \newpage
-![](src/screenshots/do-you-want-to-report-issue.png)
+![](../src/screenshots/do-you-want-to-report-issue.png)
